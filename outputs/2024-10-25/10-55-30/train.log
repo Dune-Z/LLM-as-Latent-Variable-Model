@@ -1,2 +1,0 @@
-[2024-10-25 10:55:48,690][root][INFO] - gcc -pthread -B /home/ksj3535/anaconda3/envs/llm/compiler_compat -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ksj3535/anaconda3/envs/llm/include -fPIC -O2 -isystem /home/ksj3535/anaconda3/envs/llm/include -fPIC -c /tmp/tmp11_xloie/test.c -o /tmp/tmp11_xloie/test.o
-[2024-10-25 10:55:48,718][root][INFO] - gcc -pthread -B /home/ksj3535/anaconda3/envs/llm/compiler_compat /tmp/tmp11_xloie/test.o -laio -o /tmp/tmp11_xloie/a.out

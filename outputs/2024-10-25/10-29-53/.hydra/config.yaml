@@ -1,3 +1,0 @@
-model_name_or_path: unsloth/llama-3-8b-instruct
-dataset_path: outputs/sample_output.jsonl
-attention_impl: flash_attention_2
