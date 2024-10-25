@@ -1,0 +1,21 @@
+model_name_or_path: unsloth/llama-3-8b-instruct
+dataset_path: outputs/sample_output.jsonl
+attention_impl: flash_attention_2
+trainer:
+  output_dir: outputs
+  do_train: true
+  eval_strategy: 'no'
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 4
+  learning_rate: 1.0e-05
+  num_train_epochs: 1
+  lr_scheduler_type: cosine
+  warmup_ratio: 0.1
+  logging_strategy: steps
+  save_strategy: epoch
+  fp16: false
+  bf16: true
+  run_name: llama-3-8b-instruct
+  optim: adamw_bnb_8bit
+  group_by_length: true
+  report_to: none

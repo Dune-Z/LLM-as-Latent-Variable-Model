@@ -1,0 +1,4 @@
+[2024-10-18 18:26:55,933][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-18 18:27:05,376][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-18 18:27:13,935][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-18 18:27:22,177][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"

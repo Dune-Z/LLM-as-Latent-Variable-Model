@@ -1,0 +1,58 @@
+{
+  "os":  "Linux-5.15.0-119-generic-x86_64-with-glibc2.35",
+  "python":  "3.11.9",
+  "startedAt":  "2024-10-25T16:22:45.216071Z",
+  "program":  "/home/ksj3535/research/RestEM/src/train.py",
+  "codePath":  "src/train.py",
+  "email":  "dune.ustc@gmail.com",
+  "root":  "/home/ksj3535/research/RestEM",
+  "host":  "orion",
+  "username":  "ksj3535",
+  "executable":  "/home/ksj3535/anaconda3/envs/llm/bin/python",
+  "codePathLocal":  "src/train.py",
+  "cpu_count":  40,
+  "cpu_count_logical":  80,
+  "gpu":  "[, , , , ]",
+  "gpu_count":  5,
+  "disk":  {
+    "/":  {
+      "total":  "527295578112",
+      "used":  "66772402176"
+    }
+  },
+  "memory":  {
+    "total":  "404320051200"
+  },
+  "cpu":  {
+    "count":  40,
+    "countLogical":  80
+  },
+  "gpu_nvidia":  [
+    {
+      "memoryTotal":  "51527024640",
+      "cudaCores":  10752,
+      "architecture":  "Ampere"
+    },
+    {
+      "memoryTotal":  "51527024640",
+      "cudaCores":  10752,
+      "architecture":  "Ampere"
+    },
+    {
+      "memoryTotal":  "51527024640",
+      "cudaCores":  10752,
+      "architecture":  "Ampere"
+    },
+    {
+      "memoryTotal":  "51527024640",
+      "cudaCores":  10752,
+      "architecture":  "Ampere"
+    },
+    {
+      "memoryTotal":  "51527024640",
+      "cudaCores":  10752,
+      "architecture":  "Ampere"
+    }
+  ],
+  "cudaVersion":  "12.6"
+}

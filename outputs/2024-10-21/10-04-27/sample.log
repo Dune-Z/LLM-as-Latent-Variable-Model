@@ -1,0 +1,709 @@
+[2024-10-21 10:06:02,124][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:02,224][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:02,371][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:02,396][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:02,589][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:02,732][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:02,749][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:02,765][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:02,778][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:02,778][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:02,787][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:02,789][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:02,800][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:02,911][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:03,927][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:03,942][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:03,946][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:03,963][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:04,046][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:04,212][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:04,219][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:04,392][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:04,416][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:04,603][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:04,892][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:04,893][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:04,915][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:04,955][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:04,985][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:05,035][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:05,047][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:05,080][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:05,080][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:05,087][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:05,161][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:05,205][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:05,205][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:05,223][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:05,347][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:05,407][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:06,931][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:06,963][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:07,020][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:07,104][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:07,222][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:07,473][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:07,510][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:07,537][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:07,548][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:07,566][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:07,612][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:07,916][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:07,958][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:07,967][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:07,980][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:07,998][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:08,029][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:08,036][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:08,047][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:08,058][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:08,072][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:08,076][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:08,104][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:08,125][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:08,127][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:08,130][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:08,160][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:08,190][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:08,207][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:08,221][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:08,309][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:08,310][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:08,364][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:08,395][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:08,407][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:08,431][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:08,504][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:08,594][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:08,605][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:09,671][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:09,912][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:09,913][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:09,915][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:09,916][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:09,919][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:09,920][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:09,928][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:09,929][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:09,934][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:09,935][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:09,946][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:09,946][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:09,980][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:09,981][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:10,035][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:10,035][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:10,305][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:10,305][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:10,310][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:10,310][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:10,311][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:10,312][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:10,314][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:10,315][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:10,320][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:10,321][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:10,326][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:10,326][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:10,354][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:10,354][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:10,369][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:10,369][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:10,373][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:10,374][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:10,375][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:10,375][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:10,378][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:10,378][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:10,390][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:10,391][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:10,397][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:10,397][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:10,400][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:10,401][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:10,409][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:10,410][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:10,419][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:10,419][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:10,421][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:10,422][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:10,422][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:10,423][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:10,425][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:10,426][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:10,428][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:10,429][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:10,431][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:10,432][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:10,634][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:10,752][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:10,753][openai._base_client][INFO] - Retrying request to /chat/completions in 50.000000 seconds
+[2024-10-21 10:06:11,283][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:06:11,283][openai._base_client][INFO] - Retrying request to /chat/completions in 49.000000 seconds
+[2024-10-21 10:06:11,781][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:11,827][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:11,857][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:11,868][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:11,894][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:11,896][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:11,898][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:06:12,894][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:01,383][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:01,595][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:01,647][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:01,962][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,013][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,028][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,030][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,040][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,060][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,092][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,095][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,174][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,281][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,291][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,310][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,318][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,325][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,334][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,384][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,434][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,434][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,547][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,551][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,567][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,574][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,590][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,604][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,624][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,633][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,641][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:02,726][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:03,006][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,007][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,037][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,037][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,054][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,055][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,059][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,059][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,084][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,085][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,174][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,175][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,353][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,353][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,363][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,363][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,370][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,370][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,374][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,374][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,377][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,377][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,378][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,379][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,383][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,383][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,394][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,395][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,395][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,396][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,401][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,401][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,404][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,404][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,430][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,436][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,442][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,442][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,443][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,444][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,447][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,448][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,450][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,451][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,452][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,452][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,468][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,469][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,519][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,520][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,536][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,537][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,545][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,546][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,559][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:03,560][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:07:03,894][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:03,951][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:04,341][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:05,069][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:05,302][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:05,316][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:05,318][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:05,412][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:05,425][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:05,559][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:05,683][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:05,872][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:06,593][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:06,594][openai._base_client][INFO] - Retrying request to /chat/completions in 4.000000 seconds
+[2024-10-21 10:07:06,607][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:06,608][openai._base_client][INFO] - Retrying request to /chat/completions in 4.000000 seconds
+[2024-10-21 10:07:06,626][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:06,628][openai._base_client][INFO] - Retrying request to /chat/completions in 4.000000 seconds
+[2024-10-21 10:07:06,630][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:06,631][openai._base_client][INFO] - Retrying request to /chat/completions in 4.000000 seconds
+[2024-10-21 10:07:06,661][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:06,662][openai._base_client][INFO] - Retrying request to /chat/completions in 4.000000 seconds
+[2024-10-21 10:07:06,675][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:06,676][openai._base_client][INFO] - Retrying request to /chat/completions in 4.000000 seconds
+[2024-10-21 10:07:06,709][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:06,710][openai._base_client][INFO] - Retrying request to /chat/completions in 4.000000 seconds
+[2024-10-21 10:07:06,783][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:06,784][openai._base_client][INFO] - Retrying request to /chat/completions in 4.000000 seconds
+[2024-10-21 10:07:07,058][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:07,059][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:07,061][openai._base_client][INFO] - Retrying request to /chat/completions in 4.000000 seconds
+[2024-10-21 10:07:07,062][openai._base_client][INFO] - Retrying request to /chat/completions in 4.000000 seconds
+[2024-10-21 10:07:07,063][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:07,064][openai._base_client][INFO] - Retrying request to /chat/completions in 4.000000 seconds
+[2024-10-21 10:07:07,156][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:07:07,157][openai._base_client][INFO] - Retrying request to /chat/completions in 4.000000 seconds
+[2024-10-21 10:07:07,469][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:08,023][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:08,731][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:08,869][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:08,895][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:08,901][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:08,936][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:08,967][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:08,992][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:08,998][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:09,008][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:09,016][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:09,051][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:09,369][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:10,161][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:12,552][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:12,686][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:12,778][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:12,932][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:12,972][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:12,976][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:13,031][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:13,112][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:13,153][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:13,412][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:14,287][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:16,449][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:07:16,711][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:24,151][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:24,315][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:24,340][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:24,427][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:24,443][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:24,449][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:24,457][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:24,461][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:24,576][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:24,632][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:24,888][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:24,958][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,316][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,322][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,346][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,363][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,375][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,382][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,393][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,394][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,398][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,416][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,441][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,511][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,610][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,639][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,656][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,668][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,673][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,678][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,681][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,714][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,720][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,730][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,733][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,734][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,744][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:25,880][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:26,585][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:28,039][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:28,793][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:08:28,793][openai._base_client][INFO] - Retrying request to /chat/completions in 4.000000 seconds
+[2024-10-21 10:08:28,797][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:08:28,798][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:08:28,798][openai._base_client][INFO] - Retrying request to /chat/completions in 4.000000 seconds
+[2024-10-21 10:08:28,799][openai._base_client][INFO] - Retrying request to /chat/completions in 4.000000 seconds
+[2024-10-21 10:08:28,799][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:08:28,800][openai._base_client][INFO] - Retrying request to /chat/completions in 4.000000 seconds
+[2024-10-21 10:08:28,803][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:08:28,803][openai._base_client][INFO] - Retrying request to /chat/completions in 3.000000 seconds
+[2024-10-21 10:08:29,363][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:29,405][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:29,412][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:29,429][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:29,441][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:29,442][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:29,478][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:29,502][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:29,511][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:29,513][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:29,531][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:29,605][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:29,606][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:29,606][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:29,622][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:29,722][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:29,824][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:29,833][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:29,858][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:29,862][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:29,865][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:29,924][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:29,963][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:29,965][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:30,011][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:30,051][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:30,875][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:30,945][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:30,965][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:30,981][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:31,039][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:31,079][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:31,122][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:31,366][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:31,944][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:08:31,945][openai._base_client][INFO] - Retrying request to /chat/completions in 1.000000 seconds
+[2024-10-21 10:08:32,946][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:08:32,950][openai._base_client][INFO] - Retrying request to /chat/completions in 1.000000 seconds
+[2024-10-21 10:08:32,952][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:08:32,954][openai._base_client][INFO] - Retrying request to /chat/completions in 1.000000 seconds
+[2024-10-21 10:08:32,954][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:08:32,956][openai._base_client][INFO] - Retrying request to /chat/completions in 1.000000 seconds
+[2024-10-21 10:08:33,085][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:08:33,411][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:08:33,412][openai._base_client][INFO] - Retrying request to /chat/completions in 1.000000 seconds
+[2024-10-21 10:08:34,251][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:08:34,253][openai._base_client][INFO] - Retrying request to /chat/completions in 8.000000 seconds
+[2024-10-21 10:08:34,557][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:08:34,577][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:08:35,112][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:35,709][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:08:35,710][openai._base_client][INFO] - Retrying request to /chat/completions in 6.000000 seconds
+[2024-10-21 10:08:35,726][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:08:35,727][openai._base_client][INFO] - Retrying request to /chat/completions in 6.000000 seconds
+[2024-10-21 10:08:35,824][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:35,841][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:42,371][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:08:42,372][openai._base_client][INFO] - Retrying request to /chat/completions in 9.000000 seconds
+[2024-10-21 10:08:42,433][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:08:42,434][openai._base_client][INFO] - Retrying request to /chat/completions in 8.000000 seconds
+[2024-10-21 10:08:43,633][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:51,539][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:08:52,074][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:08:53,729][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:08:53,729][openai._base_client][INFO] - Retrying request to /chat/completions in 6.000000 seconds
+[2024-10-21 10:09:01,046][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:01,222][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,223][openai._base_client][INFO] - Retrying request to /chat/completions in 8.000000 seconds
+[2024-10-21 10:09:01,265][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,265][openai._base_client][INFO] - Retrying request to /chat/completions in 8.000000 seconds
+[2024-10-21 10:09:01,305][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,305][openai._base_client][INFO] - Retrying request to /chat/completions in 8.000000 seconds
+[2024-10-21 10:09:01,306][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,307][openai._base_client][INFO] - Retrying request to /chat/completions in 8.000000 seconds
+[2024-10-21 10:09:01,310][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,310][openai._base_client][INFO] - Retrying request to /chat/completions in 8.000000 seconds
+[2024-10-21 10:09:01,318][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,318][openai._base_client][INFO] - Retrying request to /chat/completions in 15.000000 seconds
+[2024-10-21 10:09:01,319][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,320][openai._base_client][INFO] - Retrying request to /chat/completions in 15.000000 seconds
+[2024-10-21 10:09:01,329][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,330][openai._base_client][INFO] - Retrying request to /chat/completions in 15.000000 seconds
+[2024-10-21 10:09:01,332][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,333][openai._base_client][INFO] - Retrying request to /chat/completions in 8.000000 seconds
+[2024-10-21 10:09:01,335][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,336][openai._base_client][INFO] - Retrying request to /chat/completions in 15.000000 seconds
+[2024-10-21 10:09:01,354][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,354][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,355][openai._base_client][INFO] - Retrying request to /chat/completions in 8.000000 seconds
+[2024-10-21 10:09:01,356][openai._base_client][INFO] - Retrying request to /chat/completions in 8.000000 seconds
+[2024-10-21 10:09:01,371][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,372][openai._base_client][INFO] - Retrying request to /chat/completions in 15.000000 seconds
+[2024-10-21 10:09:01,377][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,378][openai._base_client][INFO] - Retrying request to /chat/completions in 15.000000 seconds
+[2024-10-21 10:09:01,393][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,394][openai._base_client][INFO] - Retrying request to /chat/completions in 8.000000 seconds
+[2024-10-21 10:09:01,397][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,398][openai._base_client][INFO] - Retrying request to /chat/completions in 15.000000 seconds
+[2024-10-21 10:09:01,402][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,403][openai._base_client][INFO] - Retrying request to /chat/completions in 8.000000 seconds
+[2024-10-21 10:09:01,404][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,404][openai._base_client][INFO] - Retrying request to /chat/completions in 8.000000 seconds
+[2024-10-21 10:09:01,409][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,410][openai._base_client][INFO] - Retrying request to /chat/completions in 8.000000 seconds
+[2024-10-21 10:09:01,411][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,412][openai._base_client][INFO] - Retrying request to /chat/completions in 15.000000 seconds
+[2024-10-21 10:09:01,426][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,427][openai._base_client][INFO] - Retrying request to /chat/completions in 8.000000 seconds
+[2024-10-21 10:09:01,438][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,440][openai._base_client][INFO] - Retrying request to /chat/completions in 8.000000 seconds
+[2024-10-21 10:09:01,468][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,469][openai._base_client][INFO] - Retrying request to /chat/completions in 8.000000 seconds
+[2024-10-21 10:09:01,504][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,505][openai._base_client][INFO] - Retrying request to /chat/completions in 15.000000 seconds
+[2024-10-21 10:09:01,530][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,531][openai._base_client][INFO] - Retrying request to /chat/completions in 8.000000 seconds
+[2024-10-21 10:09:01,532][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,533][openai._base_client][INFO] - Retrying request to /chat/completions in 8.000000 seconds
+[2024-10-21 10:09:01,722][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,723][openai._base_client][INFO] - Retrying request to /chat/completions in 15.000000 seconds
+[2024-10-21 10:09:01,743][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,743][openai._base_client][INFO] - Retrying request to /chat/completions in 7.000000 seconds
+[2024-10-21 10:09:01,744][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,745][openai._base_client][INFO] - Retrying request to /chat/completions in 7.000000 seconds
+[2024-10-21 10:09:01,750][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,751][openai._base_client][INFO] - Retrying request to /chat/completions in 15.000000 seconds
+[2024-10-21 10:09:01,775][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,776][openai._base_client][INFO] - Retrying request to /chat/completions in 15.000000 seconds
+[2024-10-21 10:09:01,797][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,798][openai._base_client][INFO] - Retrying request to /chat/completions in 7.000000 seconds
+[2024-10-21 10:09:01,814][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,815][openai._base_client][INFO] - Retrying request to /chat/completions in 7.000000 seconds
+[2024-10-21 10:09:01,824][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,826][openai._base_client][INFO] - Retrying request to /chat/completions in 7.000000 seconds
+[2024-10-21 10:09:01,826][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,828][openai._base_client][INFO] - Retrying request to /chat/completions in 7.000000 seconds
+[2024-10-21 10:09:01,833][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,834][openai._base_client][INFO] - Retrying request to /chat/completions in 7.000000 seconds
+[2024-10-21 10:09:01,838][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,839][openai._base_client][INFO] - Retrying request to /chat/completions in 7.000000 seconds
+[2024-10-21 10:09:01,878][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,879][openai._base_client][INFO] - Retrying request to /chat/completions in 7.000000 seconds
+[2024-10-21 10:09:01,933][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:01,934][openai._base_client][INFO] - Retrying request to /chat/completions in 7.000000 seconds
+[2024-10-21 10:09:03,333][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:09,012][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:09,012][openai._base_client][INFO] - Retrying request to /chat/completions in 8.000000 seconds
+[2024-10-21 10:09:09,043][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:09,043][openai._base_client][INFO] - Retrying request to /chat/completions in 8.000000 seconds
+[2024-10-21 10:09:09,062][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:09,063][openai._base_client][INFO] - Retrying request to /chat/completions in 8.000000 seconds
+[2024-10-21 10:09:09,194][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:09,195][openai._base_client][INFO] - Retrying request to /chat/completions in 14.000000 seconds
+[2024-10-21 10:09:09,368][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:09,368][openai._base_client][INFO] - Retrying request to /chat/completions in 14.000000 seconds
+[2024-10-21 10:09:09,419][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:09,420][openai._base_client][INFO] - Retrying request to /chat/completions in 14.000000 seconds
+[2024-10-21 10:09:09,476][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:09,477][openai._base_client][INFO] - Retrying request to /chat/completions in 14.000000 seconds
+[2024-10-21 10:09:09,478][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:09,479][openai._base_client][INFO] - Retrying request to /chat/completions in 14.000000 seconds
+[2024-10-21 10:09:09,522][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:09,523][openai._base_client][INFO] - Retrying request to /chat/completions in 14.000000 seconds
+[2024-10-21 10:09:09,526][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:09,527][openai._base_client][INFO] - Retrying request to /chat/completions in 14.000000 seconds
+[2024-10-21 10:09:09,541][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:09,542][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:09,542][openai._base_client][INFO] - Retrying request to /chat/completions in 14.000000 seconds
+[2024-10-21 10:09:09,543][openai._base_client][INFO] - Retrying request to /chat/completions in 14.000000 seconds
+[2024-10-21 10:09:09,565][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:09,566][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:09,567][openai._base_client][INFO] - Retrying request to /chat/completions in 14.000000 seconds
+[2024-10-21 10:09:09,567][openai._base_client][INFO] - Retrying request to /chat/completions in 14.000000 seconds
+[2024-10-21 10:09:09,583][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:09,584][openai._base_client][INFO] - Retrying request to /chat/completions in 14.000000 seconds
+[2024-10-21 10:09:09,597][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:09,597][openai._base_client][INFO] - Retrying request to /chat/completions in 14.000000 seconds
+[2024-10-21 10:09:09,606][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:09,607][openai._base_client][INFO] - Retrying request to /chat/completions in 14.000000 seconds
+[2024-10-21 10:09:09,680][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:09,681][openai._base_client][INFO] - Retrying request to /chat/completions in 14.000000 seconds
+[2024-10-21 10:09:09,700][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:09,700][openai._base_client][INFO] - Retrying request to /chat/completions in 14.000000 seconds
+[2024-10-21 10:09:09,959][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:09,960][openai._base_client][INFO] - Retrying request to /chat/completions in 14.000000 seconds
+[2024-10-21 10:09:10,029][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:10,030][openai._base_client][INFO] - Retrying request to /chat/completions in 13.000000 seconds
+[2024-10-21 10:09:10,093][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:10,094][openai._base_client][INFO] - Retrying request to /chat/completions in 13.000000 seconds
+[2024-10-21 10:09:10,096][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:10,160][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:10,161][openai._base_client][INFO] - Retrying request to /chat/completions in 13.000000 seconds
+[2024-10-21 10:09:10,209][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:10,430][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:10,480][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:16,495][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:16,495][openai._base_client][INFO] - Retrying request to /chat/completions in 7.000000 seconds
+[2024-10-21 10:09:16,503][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:16,503][openai._base_client][INFO] - Retrying request to /chat/completions in 7.000000 seconds
+[2024-10-21 10:09:16,504][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:16,505][openai._base_client][INFO] - Retrying request to /chat/completions in 7.000000 seconds
+[2024-10-21 10:09:16,572][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:16,573][openai._base_client][INFO] - Retrying request to /chat/completions in 7.000000 seconds
+[2024-10-21 10:09:16,587][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:16,587][openai._base_client][INFO] - Retrying request to /chat/completions in 7.000000 seconds
+[2024-10-21 10:09:16,870][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:16,871][openai._base_client][INFO] - Retrying request to /chat/completions in 7.000000 seconds
+[2024-10-21 10:09:16,898][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:16,898][openai._base_client][INFO] - Retrying request to /chat/completions in 6.000000 seconds
+[2024-10-21 10:09:16,986][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:16,986][openai._base_client][INFO] - Retrying request to /chat/completions in 6.000000 seconds
+[2024-10-21 10:09:17,046][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:17,047][openai._base_client][INFO] - Retrying request to /chat/completions in 6.000000 seconds
+[2024-10-21 10:09:17,061][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:17,062][openai._base_client][INFO] - Retrying request to /chat/completions in 6.000000 seconds
+[2024-10-21 10:09:17,120][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:17,120][openai._base_client][INFO] - Retrying request to /chat/completions in 6.000000 seconds
+[2024-10-21 10:09:17,158][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:17,411][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:17,412][openai._base_client][INFO] - Retrying request to /chat/completions in 6.000000 seconds
+[2024-10-21 10:09:17,655][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:17,671][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:18,792][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:18,792][openai._base_client][INFO] - Retrying request to /chat/completions in 5.000000 seconds
+[2024-10-21 10:09:18,822][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:18,822][openai._base_client][INFO] - Retrying request to /chat/completions in 5.000000 seconds
+[2024-10-21 10:09:19,278][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:19,279][openai._base_client][INFO] - Retrying request to /chat/completions in 4.000000 seconds
+[2024-10-21 10:09:24,785][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:24,954][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:24,997][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:25,002][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:25,098][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:25,219][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:25,581][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:25,811][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:25,812][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:25,875][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:25,917][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:25,952][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:25,965][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:26,006][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:26,136][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:26,205][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:26,318][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:26,376][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:26,638][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:26,663][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:26,783][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:27,147][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:27,701][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:27,721][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:29,361][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:29,524][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:30,495][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:30,667][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:30,699][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:30,778][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:32,968][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:32,984][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:33,023][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:33,026][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:33,079][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:33,787][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:33,788][openai._base_client][INFO] - Retrying request to /chat/completions in 1.000000 seconds
+[2024-10-21 10:09:33,813][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:33,814][openai._base_client][INFO] - Retrying request to /chat/completions in 9.000000 seconds
+[2024-10-21 10:09:33,821][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:33,821][openai._base_client][INFO] - Retrying request to /chat/completions in 1.000000 seconds
+[2024-10-21 10:09:33,851][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:33,851][openai._base_client][INFO] - Retrying request to /chat/completions in 9.000000 seconds
+[2024-10-21 10:09:33,864][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:33,864][openai._base_client][INFO] - Retrying request to /chat/completions in 9.000000 seconds
+[2024-10-21 10:09:33,881][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:33,882][openai._base_client][INFO] - Retrying request to /chat/completions in 1.000000 seconds
+[2024-10-21 10:09:33,894][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:33,895][openai._base_client][INFO] - Retrying request to /chat/completions in 17.000000 seconds
+[2024-10-21 10:09:33,896][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:33,897][openai._base_client][INFO] - Retrying request to /chat/completions in 1.000000 seconds
+[2024-10-21 10:09:34,428][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:34,601][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:34,648][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:34,651][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:34,658][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:34,744][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:34,772][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:34,808][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:34,815][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:34,817][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:34,820][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:34,837][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:34,865][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:34,871][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:34,891][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:34,917][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:34,937][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:34,960][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:34,961][openai._base_client][INFO] - Retrying request to /chat/completions in 7.000000 seconds
+[2024-10-21 10:09:34,962][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:34,968][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:34,974][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:35,039][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:35,403][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:35,404][openai._base_client][INFO] - Retrying request to /chat/completions in 7.000000 seconds
+[2024-10-21 10:09:35,868][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:35,895][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:35,909][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:35,923][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:35,989][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:36,002][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:36,024][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:36,041][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:36,348][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:36,440][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:36,597][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:36,606][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:36,894][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:09:42,606][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:42,632][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:42,964][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:42,964][openai._base_client][INFO] - Retrying request to /chat/completions in 19.000000 seconds
+[2024-10-21 10:09:42,992][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:42,993][openai._base_client][INFO] - Retrying request to /chat/completions in 18.000000 seconds
+[2024-10-21 10:09:43,517][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:43,518][openai._base_client][INFO] - Retrying request to /chat/completions in 17.000000 seconds
+[2024-10-21 10:09:43,756][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:43,757][openai._base_client][INFO] - Retrying request to /chat/completions in 17.000000 seconds
+[2024-10-21 10:09:43,780][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:43,781][openai._base_client][INFO] - Retrying request to /chat/completions in 17.000000 seconds
+[2024-10-21 10:09:51,094][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:09:51,094][openai._base_client][INFO] - Retrying request to /chat/completions in 11.000000 seconds
+[2024-10-21 10:10:00,799][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:10:01,033][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:10:01,034][openai._base_client][INFO] - Retrying request to /chat/completions in 1.000000 seconds
+[2024-10-21 10:10:01,403][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:10:01,403][openai._base_client][INFO] - Retrying request to /chat/completions in 8.000000 seconds
+[2024-10-21 10:10:02,155][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:10:02,217][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:10:02,280][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:10:02,413][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:10:02,414][openai._base_client][INFO] - Retrying request to /chat/completions in 7.000000 seconds
+[2024-10-21 10:10:02,438][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:10:03,330][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:10:03,331][openai._base_client][INFO] - Retrying request to /chat/completions in 6.000000 seconds
+[2024-10-21 10:10:03,437][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:10:03,438][openai._base_client][INFO] - Retrying request to /chat/completions in 6.000000 seconds
+[2024-10-21 10:10:04,484][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:10:04,485][openai._base_client][INFO] - Retrying request to /chat/completions in 5.000000 seconds
+[2024-10-21 10:10:10,068][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:10:10,068][openai._base_client][INFO] - Retrying request to /chat/completions in 14.000000 seconds
+[2024-10-21 10:10:10,119][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+[2024-10-21 10:10:10,120][openai._base_client][INFO] - Retrying request to /chat/completions in 14.000000 seconds
+[2024-10-21 10:10:10,630][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:10:11,010][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:10:11,321][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:10:25,194][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
+[2024-10-21 10:10:25,280][httpx][INFO] - HTTP Request: POST https://azure-openai-api.shenmishajing.workers.dev/v1/chat/completions "HTTP/1.1 200 OK"
