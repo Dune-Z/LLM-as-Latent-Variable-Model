@@ -12,8 +12,8 @@ class RestEMTrainer(Trainer):
         outputs = model(**input)
         logits = outputs.logits[..., -labels.shape[-1]:, :]
         loss = torch.nn.functional.cross_entropy(
-            logits.view(-1, logits.size(-1)),
-            labels.view(-1),
+            logits.reshape(-1, logits.shape[-1]),
+            labels.reshape(-1),
             ignore_index=self.tokenizer.pad_token_id,
         )
         return (loss, outputs) if return_outputs else loss

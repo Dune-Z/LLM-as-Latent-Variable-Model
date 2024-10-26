@@ -9,6 +9,7 @@ from utils import (
     CLIENT,
     DATASET_PROVIDERS,
     FEWSHOT_PROMPT,
+    static_verification,
     verification,
     batch_verification
 )
@@ -22,6 +23,7 @@ def vllm_sample(
     sample_params: Dict[str, Any],
     sample_batch_size: int = 1,
     cutoff: int = 10,
+    verification_model: str = "gpt-4-turbo",
 ) -> Dict[str, List]:
     collections = {}
 
@@ -40,9 +42,15 @@ def vllm_sample(
             for i, single_outputs in enumerate(batch_outputs):
                 prompt = single_outputs.prompt
                 text_outputs = [prompt + output.text for output in single_outputs.outputs]
-                reward = batch_verification(text_outputs, labels[i], client)
-                # reward = verification(text_outputs, labels[i], client)
+                # reward = batch_verification(text_outputs, labels[i], client)
+                # reward = verification(text_outputs, labels[i], client, model_name=verification_model)
+                reward = static_verification(text_outputs, labels[i])
                 verified_outputs = [output.text for output, r in zip(single_outputs.outputs, reward) if r]
+                stop_string = "I hope it is correct."
+                for i, output in enumerate(verified_outputs):
+                    if stop_string in output:
+                        index = output.find(stop_string)
+                        verified_outputs[i] = output[:index-1]
 
                 if len(verified_outputs) > 0:
                     verified_outputs = verified_outputs[:min(cutoff, len(verified_outputs))]
@@ -61,6 +69,7 @@ def main(cfg: DictConfig):
         "max_tokens": cfg.max_tokens,
         "top_p": cfg.top_p,
         "top_k": cfg.top_k,
+        "repetition_penalty": cfg.repetition_penalty,
     }
     datasets = {}
     sample_sizes = {}
@@ -77,6 +86,7 @@ def main(cfg: DictConfig):
         sample_sizes=sample_sizes,
         sample_params=sample_params,
         sample_batch_size=cfg.sample_batch_size,
+        verification_model=cfg.verification_model,
     )
 
     with open(cfg.output_file, "w") as f:

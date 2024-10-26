@@ -14,7 +14,8 @@ from datasets import Dataset, load_dataset
 from typing import List, Dict, Tuple, Optional
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from transformers import AutoTokenizer, AutoModelForCausalLM, DataCollatorForSeq2Seq
-FEWSHOT_PROMPT = r"""Question: A positive multiple of 45 less than 1000 is randomly selected. What is the probability that it is a two-digit integer? Express your answer as a common fraction.
+FEWSHOT_PROMPT = r"""The following examples demonstrate how to solve various math problems step by step. For each problem, the solution should begin by identifying the key elements and then proceed with a logical sequence of steps to find the answer. The final answer should be clearly highlighted using $\\boxed{}$
+Question: A positive multiple of 45 less than 1000 is randomly selected. What is the probability that it is a two-digit integer? Express your answer as a common fraction.
 
 Solution: The positive multiples of 45 are  \\[45,90,135,\\ldots,990=1\\cdot45,2\\cdot45,3\\cdot45,\\ldots,22\\cdot45.\\] There are 22 multiples on this list. Every positive multiple of 45 less than 1000 is either a two-digit integer or a three-digit integer. Out of the $99-10+1=90$ two-digit integers, $45$ and $90$ are multiples of 45. Therefore, the probability that the selected multiple of 45 has two digits is $2/22=\\boxed{\\frac{1}{11}}$.
 
@@ -153,6 +154,18 @@ def model_provider(cfg) -> Tuple[transformers.PreTrainedTokenizer, transformers.
     tokenizer.padding_side = "left"
     return tokenizer, model
 
+    
+def static_verification(
+    text_outputs: List[str],
+    label: str
+):
+    results = list()
+    for text_output in text_outputs:
+        boxed_text = text_output.split("\\boxed{")[-1].split("}")[0]
+        results.append(boxed_text == label)
+
+    return results
+
 
 def verification(
     text_outputs: List[str],
@@ -204,7 +217,7 @@ def single_verification(
     client: openai.Client,
     model_name: str = "gpt-4-turbo",
     max_retries: int = 5,
-    initial_delay: float = 1,
+    initial_delay: float = 32,
 ) -> bool:
     prompt = {
         "role": "system",

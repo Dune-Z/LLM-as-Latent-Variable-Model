@@ -4,6 +4,7 @@ top_k: 40
 top_p: 1.0
 temperature: 0.7
 max_tokens: 1536
+repetition_penalty: 1.1
 sample_batch_size: 4
 cutoff: 10
 dataset_kwargs:
@@ -11,3 +12,4 @@ dataset_kwargs:
     problem_size: 32
     sample_size: 32
 output_file: "outputs/sample_output.jsonl"
+verification_model: "gpt-4-turbo"
