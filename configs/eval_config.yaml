@@ -1,5 +1,5 @@
 model_name_or_path: "unsloth/llama-3-8b-instruct"
 model_dtype: "bfloat16"
 max_tokens: 1536
-batch_size: 512
+batch_size: 5000
 output_file: "outputs/llama-3-8b-instruct-accuracy.txt"

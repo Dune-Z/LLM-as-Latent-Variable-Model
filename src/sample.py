@@ -78,7 +78,9 @@ def main(cfg: DictConfig):
     for dataset_name, dataset_configs in cfg.dataset_kwargs.items():
         dataset = DATASET_PROVIDERS[dataset_name](tokenizer=None)
         train_dataset = dataset["train"]
-        train_dataset = train_dataset.sample(dataset_configs.problem_size)
+        if dataset_configs.problem_size > 0 and dataset_configs.problem_size < len(train_dataset):
+            train_dataset = train_dataset.sample(dataset_configs.problem_size)
+        print(f"DATASET: {dataset_name} | PROBLEM SIZE: {len(train_dataset)} | SAMPLE SIZE: {dataset_configs.sample_size} | BATCH SIZE: {cfg.sample_batch_size}")
         datasets[dataset_name] = train_dataset
         sample_sizes[dataset_name] = dataset_configs.sample_size
         
