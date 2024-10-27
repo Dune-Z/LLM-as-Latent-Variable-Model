@@ -51,8 +51,9 @@ class MathDataset(torch.utils.data.Dataset):
     def __getitem__(self, idx):
         item = self.data[idx]
         prompt = FEWSHOT_PROMPT + GENERATION_PROMPT.format(question=item["problem"])
-        inputs = self.tokenizer(prompt, return_tensors="pt") if self.tokenizer is not None else None
+        inputs = self.tokenizer(prompt) if self.tokenizer is not None else None
         label = item["label"]
+        label = self.tokenizer(label)['input_ids'] if self.tokenizer is not None else label
         return prompt, inputs, label
 
     def sample(self, size: int):
@@ -117,7 +118,7 @@ def math_dataset_provider(
 def filtered_math_dataset_provider(filename: str, tokenizer: transformers.PreTrainedTokenizer):
     dataset = load_dataset('json', data_files=filename)
 
-    def _preprocess_fn(example):
+    def _train_data_preprocess_fn(example):
         inputs, labels = list(), list()
         for question, answers in example.items():
             for answer in answers[0]:
@@ -129,9 +130,18 @@ def filtered_math_dataset_provider(filename: str, tokenizer: transformers.PreTra
         model_inputs["labels"] = labels_tokenized
         return model_inputs
     
-    tokenized_dataset = dataset.map(_preprocess_fn, batched=True, remove_columns=dataset['train'].column_names)
+    tokenized_dataset = dataset.map(_train_data_preprocess_fn, batched=True, remove_columns=dataset['train'].column_names)
     data_collator = DataCollatorForSeq2Seq(tokenizer, padding=True)
-    return tokenized_dataset['train'], data_collator
+    # test_data = math_dataset_provider(splits=["test"], tokenizer=tokenizer)['test']
+    # inputs = [d[1] for d in test_data][:10]
+    # labels = [d[2] for d in test_data][:10]
+    # input_keys = inputs[0].keys()
+    # inputs = {k: [d[k] for d in inputs] for k in input_keys}
+    # inputs["labels"] = labels
+    # test_dataset = Dataset.from_dict(inputs)
+    # tokenized_dataset['test'] = test_dataset
+
+    return tokenized_dataset, data_collator
 
 
 def load_gsm8k_dataset():

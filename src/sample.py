@@ -35,6 +35,7 @@ def vllm_sample(
         batch_index = 0
 
         while batch_index < len(batches):
+            sample_batch_size = min(sample_batch_size, len(batches) - batch_index)
             batch = batches[batch_index:batch_index+sample_batch_size]
             prompts, labels = zip(*batch)
             print(f"SAMPLING THE ({batch_index+1}-{batch_index+sample_batch_size}) EXAMPLES FROM {key} DATASET...")
@@ -64,13 +65,6 @@ def vllm_sample(
     
 @hydra.main(config_path="../configs", config_name="sample_config", version_base="1.2")
 def main(cfg: DictConfig):
-    if cfg.checkpoint_path is not None:
-        checkpoint_path = cfg.checkpoint_path
-        checkpoints = list(pathlib.Path(checkpoint_path).glob("*.pt"))
-        if len(checkpoints) > 0:
-            latest_checkpoint = max(checkpoints, key=lambda x: x.stat().st_ctime)
-            cfg.model_name_or_path = str(latest_checkpoint)
-
     llm = LLM(model=cfg.model_name_or_path, dtype=cfg.model_dtype)
     sample_params = {
         "temperature": cfg.temperature,
