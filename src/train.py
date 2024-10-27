@@ -24,7 +24,7 @@ def main(cfg: DictConfig):
     tokenizer, model = model_provider(cfg)
     model.config._attn_implementation = cfg.attention_impl
     train_dataset, data_collator = filtered_math_dataset_provider(cfg.dataset_path, tokenizer)
-    test_dataset = math_dataset_provider(splits=["test"], tokenizer=tokenizer)
+    test_dataset = math_dataset_provider(splits=["test"], tokenizer=tokenizer)['test']
     training_args = TrainingArguments(**cfg.trainer)
     trainer = RestEMTrainer(
         model=model,
