@@ -1,4 +1,5 @@
 model_name_or_path: "unsloth/llama-3-8b-Instruct"
+checkpoint_path: "outputs/llama-3-8b-instruct-restem"
 model_dtype: "bfloat16"
 top_k: 40
 top_p: 1.0

@@ -3,7 +3,7 @@ import hydra
 import transformers
 from omegaconf import DictConfig
 from transformers import Trainer, TrainingArguments
-from utils import model_provider, filtered_math_dataset_provider
+from utils import model_provider, filtered_math_dataset_provider, math_dataset_provider
 
 
 class RestEMTrainer(Trainer):
@@ -24,12 +24,14 @@ def main(cfg: DictConfig):
     tokenizer, model = model_provider(cfg)
     model.config._attn_implementation = cfg.attention_impl
     train_dataset, data_collator = filtered_math_dataset_provider(cfg.dataset_path, tokenizer)
+    test_dataset = math_dataset_provider(splits=["test"], tokenizer=tokenizer)
     training_args = TrainingArguments(**cfg.trainer)
     trainer = RestEMTrainer(
         model=model,
         data_collator=data_collator,
         tokenizer=tokenizer,
         train_dataset=train_dataset,
+        eval_dataset=test_dataset,
         args=training_args,
     )
     trainer.train()

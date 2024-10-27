@@ -2,9 +2,9 @@ model_name_or_path: "unsloth/llama-3-8b-instruct"
 dataset_path: "outputs/sample_output.jsonl"
 attention_impl: "flash_attention_2"
 trainer:
-  output_dir: "outputs"
+  output_dir: "outputs/llama-3-8b-instruct-restem"
   do_train: true
-  eval_strategy: "no"
+  eval_strategy: "epoch"
   per_device_train_batch_size: 1
   gradient_accumulation_steps: 4
   learning_rate: 1e-5

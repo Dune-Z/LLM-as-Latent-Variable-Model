@@ -85,7 +85,7 @@ def math_dataset_provider(
     ds = {s: list() for s in splits}
     processed_ds = load_dataset("gohsyi/math")
     processed_index = index_processed_math_dataset(processed_ds, splits)
-
+    datasets = {split: list() for split in splits}
     for split in splits:
         split_path = os.path.join(path, split)
         fields = [f for f in pathlib.Path(split_path).iterdir() if f.is_dir()]
@@ -108,10 +108,10 @@ def math_dataset_provider(
                         ds[split].append(data)
                     else:
                         raise ValueError(f"Could not find the corresponding data in the processed dataset for problem: {data['problem']}")
+        
+        datasets[split] = MathDataset(ds[split], tokenizer)
 
-    train_ds = MathDataset(ds["train"], tokenizer)
-    test_ds = MathDataset(ds["test"], tokenizer)
-    return train_ds, test_ds
+    return datasets
 
     
 def filtered_math_dataset_provider(filename: str, tokenizer: transformers.PreTrainedTokenizer):
