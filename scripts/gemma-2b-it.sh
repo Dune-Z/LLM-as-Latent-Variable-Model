@@ -48,7 +48,8 @@ do
             TOKENIZERS_PARALLELISM=false CUDA_VISIBLE_DEVICES=0 python src/train.py\
                 model_name_or_path=$CURRENT_MODEL_PATH\
                 dataset_path="$SAMPLE_FILE"\
-                trainer.output_dir="$ROUND_DIR"
+                trainer.output_dir="$ROUND_DIR"\
+                trainer.deepspeed="configs/gemma-2b-it-deepspeed_config.json"
 
             TEMP_MODEL_PATH=$CURRENT_MODEL_PATH
             mv $ROUND_DIR/checkpoint-* "${ROUND_DIR}/checkpoint-inner-round-${INNER_ROUND}"
