@@ -42,11 +42,16 @@ def vllm_generation(
 def main(cfg: DictConfig):
     llm = LLM(cfg.model_name_or_path, dtype=cfg.model_dtype)
     test_dataset = math_dataset_provider(splits=['test'], tokenizer=None)['test']
+    test_size = len(test_dataset)
+    batch_size = cfg.batch_size
+    if cfg.eval_ratio < 1.0:
+        test_dataset = test_dataset.sample(size=int(test_size * cfg.eval_ratio))
+        batch_size = min(cfg.batch_size, len(test_dataset))
     acc = vllm_generation(
         llm=llm,
         max_tokens=cfg.max_tokens,
         eval_dataset=test_dataset,
-        generation_batch_size=cfg.batch_size
+        generation_batch_size=batch_size
     )
     with open(cfg.output_file, "w") as f:
         f.write(f"{acc}")
