@@ -19,7 +19,7 @@ do
         CUDA_VISIBLE_DEVICES=0 python src/sample.py\
             output_file="$SAMPLE_FILE"\
             model_name_or_path=$CURRENT_SAMPLE_MODEL_PATH\
-            sample_batch_size=16\
+            sample_batch_size=128\
             dataset_kwargs.MATH.problem_size=-1
     else
         echo "Sample file already exists for round $i. Skip sampling."
