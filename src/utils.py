@@ -14,7 +14,7 @@ from datasets import Dataset, load_dataset
 from typing import List, Dict, Tuple, Optional
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from transformers import AutoTokenizer, AutoModelForCausalLM, DataCollatorForSeq2Seq
-FEWSHOT_PROMPT = r"""The following examples demonstrate how to solve various math problems step by step. For each problem, the solution should begin by identifying the key elements and then proceed with a logical sequence of steps to find the answer. The final answer should be clearly highlighted using $\\boxed{}$
+GSM8K_FEWSHOT_PROMPT = r"""The following examples demonstrate how to solve various math problems step by step. For each problem, the solution should begin by identifying the key elements and then proceed with a logical sequence of steps to find the answer. The final answer should be clearly highlighted using $\\boxed{}$.
 Question: A positive multiple of 45 less than 1000 is randomly selected. What is the probability that it is a two-digit integer? Express your answer as a common fraction.
 
 Solution: The positive multiples of 45 are  \\[45,90,135,\\ldots,990=1\\cdot45,2\\cdot45,3\\cdot45,\\ldots,22\\cdot45.\\] There are 22 multiples on this list. Every positive multiple of 45 less than 1000 is either a two-digit integer or a three-digit integer. Out of the $99-10+1=90$ two-digit integers, $45$ and $90$ are multiples of 45. Therefore, the probability that the selected multiple of 45 has two digits is $2/22=\\boxed{\\frac{1}{11}}$.
@@ -25,10 +25,25 @@ Solution: We could check to see which divisors of $-35$ are roots of the cubic $
 
 """
 
+MATH_FEWSHOT_PROMPT = r"""The following examples demonstrate how to solve various math problems step by step. For each problem, the solution should begin by identifying the key elements and then proceed with a logical sequence of steps to find the answer. The final answer should be clearly highlighted using $\\boxed{}$.
+Question: A robe takes 2 bolts of blue fiber and half that much white fiber. How many bolts in total does it take?
+
+Solution: How many bolts of white fiber does it take? ** It takes 2/2=<<2/2=1>>1 bolt of white fiber How many bolts in total does it take? ** So the total amount of fabric is 2+1=<<2+1=3>>3 bolts of fabric. So the answer is $\\boxed{3}$.
+
+Question: Josh decides to try flipping a house. He buys a house for $80,000 and then puts in $50,000 in repairs. This increased the value of the house by 150%. How much profit did he make?
+
+Solution: The cost of the house and repairs came out to 80,000+50,000=$<<80000+50000=130000>>130,000 He increased the value of the house by 80,000*1.5=<<80000*1.5=120000>>120,000 So the new value of the house is 120,000+80,000=$<<120000+80000=200000>>200,000 So he made a profit of 200,000-130,000=$<<200000-130000=70000>>70,000. So the answer is $\\boxed{70,000}$.
+
+"""
+
+FEWSHOT_PROMPTS = {
+    "MATH": MATH_FEWSHOT_PROMPT,
+    "GSM8K": GSM8K_FEWSHOT_PROMPT,
+}
+
 GENERATION_PROMPT = """Question: {question}
 
-Solution: 
-"""
+Solution: """
 
 
 def load_client():
@@ -50,7 +65,7 @@ class MathDataset(torch.utils.data.Dataset):
 
     def __getitem__(self, idx):
         item = self.data[idx]
-        prompt = FEWSHOT_PROMPT + GENERATION_PROMPT.format(question=item["problem"])
+        prompt = MATH_FEWSHOT_PROMPT + GENERATION_PROMPT.format(question=item["problem"])
         inputs = self.tokenizer(prompt) if self.tokenizer is not None else None
         label = item["label"]
         label = self.tokenizer(label)['input_ids'] if self.tokenizer is not None else label
@@ -59,6 +74,28 @@ class MathDataset(torch.utils.data.Dataset):
     def sample(self, size: int):
         sampled_indices = random.sample(range(len(self.data)), size)
         sampled_items = [self[i] for i in sampled_indices]
+        return sampled_items
+
+        
+class GSM8KDataset(torch.utils.data.Dataset):
+    def __init__(self, path: str, name: str, split: str, tokenizer: Optional[transformers.PreTrainedTokenizer] = None):
+        self.datasets = load_dataset(path, name)[split]
+        self.tokenizer = tokenizer
+    
+    def __len__(self):
+        return len(self.datasets)
+    
+    def __getitem__(self, idx):
+        item = self.datasets[idx]
+        prompt = GSM8K_FEWSHOT_PROMPT + GENERATION_PROMPT.format(question=item["question"])
+        inputs = self.tokenizer(prompt) if self.tokenizer is not None else None
+        label = item["answer"].split("#### ")[-1]
+        label = self.tokenizer(label)['input_ids'] if self.tokenizer is not None else label
+        return prompt, inputs, label
+    
+    def sample(self, size: int):
+        self.datasets.shuffle()
+        sampled_items = [self[i] for i in range(size)]
         return sampled_items
 
 
@@ -114,6 +151,16 @@ def math_dataset_provider(
 
     return datasets
 
+
+def gsm8k_dataset_provider(
+    path: str = "openai/gsm8k",
+    name: str = "main",
+    splits: List[str] = ["train", "test"],
+    tokenizer: transformers.PreTrainedTokenizer = None,
+):
+    datasets = {split: GSM8KDataset(path=path, name=name, split=split, tokenizer=tokenizer) for split in splits}
+    return datasets
+
     
 def filtered_math_dataset_provider(filename: str, tokenizer: transformers.PreTrainedTokenizer):
     dataset = load_dataset('json', data_files=filename)
@@ -122,7 +169,7 @@ def filtered_math_dataset_provider(filename: str, tokenizer: transformers.PreTra
         inputs, labels = list(), list()
         for question, answers in example.items():
             for answer in answers[0]:
-                inputs.append(f"{FEWSHOT_PROMPT}{question}{answer}")
+                inputs.append(f"{MATH_FEWSHOT_PROMPT}{question}{answer}")
                 labels.append(answer)
 
         model_inputs = tokenizer(inputs)
@@ -144,13 +191,9 @@ def filtered_math_dataset_provider(filename: str, tokenizer: transformers.PreTra
     return tokenized_dataset, data_collator
 
 
-def load_gsm8k_dataset():
-    ds = load_dataset("openai/gsm8k", "main")
-    print(ds['train'][0])
-
-    
 DATASET_PROVIDERS = {
     "MATH": math_dataset_provider,
+    "GSM8K": gsm8k_dataset_provider,
 }
 
     
@@ -167,7 +210,7 @@ def model_provider(cfg) -> Tuple[transformers.PreTrainedTokenizer, transformers.
     
 def static_verification(
     text_outputs: List[str],
-    label: str
+    label: str,
 ):
     results = list()
     for text_output in text_outputs:

@@ -6,6 +6,7 @@ ROUND=1
 NUM_ROUNDS=5
 BASE_MODEL_PATH="unsloth/llama-3-8b-instruct"
 CURRENT_SAMPLE_MODEL_PATH="unsloth/llama-3-8b-instruct"
+CUDA_DEVICE=0
 
 for ((i=1; i<=$NUM_ROUNDS; i++))
 do
@@ -16,7 +17,7 @@ do
 
     if [ ! -f "$SAMPLE_FILE" ]; then
         echo "Sampling data for round $i"
-        CUDA_VISIBLE_DEVICES=0 python src/sample.py\
+        CUDA_VISIBLE_DEVICES=$CUDA_DEVICE python src/sample.py\
             output_file="$SAMPLE_FILE"\
             model_name_or_path=$CURRENT_SAMPLE_MODEL_PATH\
             sample_batch_size=32\
@@ -33,7 +34,7 @@ do
     while true; do
         echo "Evaluating model for round $i"
         ACC_FILE="${ROUND_DIR}/accuracy-${INNER_ROUND}.txt"
-        CUDA_VISIBLE_DEVICES=0 python src/evaluate.py\
+        CUDA_VISIBLE_DEVICES=$CUDA_DEVICE python src/evaluate.py\
             model_name_or_path=$CURRENT_MODEL_PATH\
             output_file="$ACC_FILE"
 
@@ -45,7 +46,7 @@ do
             echo "Accuracy improved from $BEST_ACC to $CURRENT_ACC. Train new model."
             BEST_ACC=$CURRENT_ACC
 
-            TOKENIZERS_PARALLELISM=false CUDA_VISIBLE_DEVICES=0 python src/train.py\
+            TOKENIZERS_PARALLELISM=false CUDA_VISIBLE_DEVICES=$CUDA_DEVICE python src/train.py\
                 model_name_or_path=$CURRENT_MODEL_PATH\
                 dataset_path="$SAMPLE_FILE"\
                 trainer.output_dir="$ROUND_DIR"\

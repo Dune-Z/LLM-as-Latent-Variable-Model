@@ -1,11 +1,12 @@
 #!/bin/bash
 set -e
 
-OUTPUT_DIR="outputs/gemma-2b-it-restem"
+OUTPUT_DIR="outputs/gemma-2-2b-it-restem"
 ROUND=1
 NUM_ROUNDS=5
-BASE_MODEL_PATH="google/gemma-2b-it"
-CURRENT_SAMPLE_MODEL_PATH="google/gemma-2b-it"
+BASE_MODEL_PATH="google/gemma-2-2b-it"
+CURRENT_SAMPLE_MODEL_PATH="google/gemma-2-2b-it"
+CUDA_DEVICE=0
 
 for ((i=1; i<=$NUM_ROUNDS; i++))
 do
@@ -16,11 +17,11 @@ do
 
     if [ ! -f "$SAMPLE_FILE" ]; then
         echo "Sampling data for round $i"
-        CUDA_VISIBLE_DEVICES=0 python src/sample.py\
+        CUDA_VISIBLE_DEVICES=$CUDA_DEVICE python src/sample.py\
             output_file="$SAMPLE_FILE"\
             model_name_or_path=$CURRENT_SAMPLE_MODEL_PATH\
             sample_batch_size=128\
-            dataset_kwargs.MATH.problem_size=-1
+            dataset_kwargs.MATH.problem_size=256
     else
         echo "Sample file already exists for round $i. Skip sampling."
     fi
@@ -33,11 +34,17 @@ do
     while true; do
         echo "Evaluating model for round $i"
         ACC_FILE="${ROUND_DIR}/accuracy-${INNER_ROUND}.txt"
-        CUDA_VISIBLE_DEVICES=0 python src/evaluate.py\
-            model_name_or_path=$CURRENT_MODEL_PATH\
-            output_file="$ACC_FILE"
+        # CUDA_VISIBLE_DEVICES=$CUDA_DEVICE python src/evaluate.py\
+        #     model_name_or_path=$CURRENT_MODEL_PATH\
+        #     output_file="$ACC_FILE"
+        CUDA_VISIBLE_DEVICES=$CUDA_DEVICE lm_eval \
+            --model vllm \
+            --model_args pretrained=$CURRENT_MODEL_PATH \
+            --task hendrycks_math \
+            --batch_size auto \
+            --output_path $OUTPUT_DIR
 
-        CURRENT_ACC=$(cat $ACC_FILE)
+        CURRENT_ACC=$(jq '.groups.hendrycks_math["exact_match,none"]' $ACC_FILE)
         echo "Curr accuracy: $CURRENT_ACC"
         echo "Best accuracy: $BEST_ACC"
 
@@ -45,7 +52,7 @@ do
             echo "Accuracy improved from $BEST_ACC to $CURRENT_ACC. Train new model."
             BEST_ACC=$CURRENT_ACC
 
-            TOKENIZERS_PARALLELISM=false CUDA_VISIBLE_DEVICES=0 python src/train.py\
+            TOKENIZERS_PARALLELISM=false CUDA_VISIBLE_DEVICES=$CUDA_DEVICE python src/train.py\
                 model_name_or_path=$CURRENT_MODEL_PATH\
                 dataset_path="$SAMPLE_FILE"\
                 trainer.output_dir="$ROUND_DIR"\

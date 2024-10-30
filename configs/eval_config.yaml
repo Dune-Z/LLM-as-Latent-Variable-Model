@@ -4,3 +4,5 @@ max_tokens: 1536
 batch_size: 5000
 eval_ratio: 1.0
 output_file: "outputs/llama-3-8b-instruct-accuracy.txt"
+datasets:
+  - GSM8K

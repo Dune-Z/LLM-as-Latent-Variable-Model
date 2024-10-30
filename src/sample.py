@@ -9,7 +9,7 @@ from vllm import LLM, SamplingParams
 from utils import (
     CLIENT,
     DATASET_PROVIDERS,
-    FEWSHOT_PROMPT,
+    FEWSHOT_PROMPTS,
     static_verification,
     verification,
     batch_verification
@@ -56,7 +56,7 @@ def vllm_sample(
 
                 if len(verified_outputs) > 0:
                     verified_outputs = verified_outputs[:min(cutoff, len(verified_outputs))]
-                    collections[single_outputs.prompt[len(FEWSHOT_PROMPT):]] = verified_outputs
+                    collections[single_outputs.prompt[len(FEWSHOT_PROMPTS[key]):]] = verified_outputs
 
             batch_index += sample_batch_size
 
