@@ -163,19 +163,20 @@ def gsm8k_dataset_provider(
     return datasets
 
     
-def filtered_math_dataset_provider(filename: str, tokenizer: transformers.PreTrainedTokenizer):
+def filtered_dataset_provider(filename: str, tokenizer: transformers.PreTrainedTokenizer):
     dataset = load_dataset('json', data_files=filename)
 
     def _train_data_preprocess_fn(example):
-        inputs, labels = list(), list()
-        for question, answers in example.items():
-            for answer in answers[0]:
-                inputs.append(f"{MATH_FEWSHOT_PROMPT}{question}{answer}")
-                labels.append(answer)
-
-        model_inputs = tokenizer(inputs)
-        labels_tokenized = tokenizer(labels)["input_ids"]
-        model_inputs["labels"] = labels_tokenized
+        inputs = example['Question']
+        answers = example['Answers']
+        qa_pairs = list()
+        labels = list()
+        for q, answer in zip(inputs, answers):
+            qa_pair = [f"Question: {q}\nSolution: {a}" for a in answer]
+            qa_pairs.extend(qa_pair)
+            labels.extend([a for a in answer])
+        model_inputs = tokenizer(qa_pairs)
+        model_inputs["labels"] = tokenizer(labels)['input_ids']
         return model_inputs
     
     tokenized_dataset = dataset.map(_train_data_preprocess_fn, batched=True, remove_columns=dataset['train'].column_names)

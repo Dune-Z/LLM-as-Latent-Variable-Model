@@ -97,6 +97,22 @@ def main(cfg: DictConfig):
     with open(cfg.output_file, "w") as f:
         json.dump(collections, f, indent=4)
 
+    with open(cfg.output_file, "r") as f:
+        data = json.load(f)
+
+    transformed_data = list()
+    for question_prompt, answers in data.items():
+        # Separate question and solution part from the prompt
+        question = question_prompt.split("Solution:")[0].split("Question:")[1].strip()
+        transformed_data.append({
+            "Question": question,
+            "Answers": answers
+        })
+
+    with open(cfg.output_file, "w") as f:
+        for item in transformed_data:
+            f.write(json.dumps(item) + "\n")
+
     from torch.distributed import destroy_process_group
     destroy_process_group()
 

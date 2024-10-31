@@ -7,7 +7,7 @@ ROUND=1
 NUM_ROUNDS=5
 BASE_MODEL_PATH="google/gemma-2-2b-it"
 CURRENT_SAMPLE_MODEL_PATH="google/gemma-2-2b-it"
-CUDA_DEVICE=0
+CUDA_DEVICE=3
 
 for ((i=1; i<=$NUM_ROUNDS; i++))
 do
@@ -22,7 +22,7 @@ do
             output_file="$SAMPLE_FILE"\
             model_name_or_path=$CURRENT_SAMPLE_MODEL_PATH\
             sample_batch_size=128\
-            dataset_kwargs.GSM8K.problem_size=256
+            dataset_kwargs.GSM8K.problem_size=-1
     else
         echo "Sample file already exists for round $i. Skip sampling."
     fi
@@ -41,7 +41,7 @@ do
         # if the file $ACC_DIR/*/*.json exists, then skip the evaluation
         if [ ! -f $ACC_DIR/*/*.json ]; then
             CUDA_VISIBLE_DEVICES=$CUDA_DEVICE lm_eval \
-                --model vllm \
+                --model hf \
                 --model_args pretrained=$CURRENT_MODEL_PATH \
                 --task gsm8k \
                 --batch_size auto \
@@ -50,7 +50,7 @@ do
         else
             echo "Accuracy file already exists for round $i. Skip evaluation."
         fi
-        CURRENT_ACC=$(jq '.groups.hendrycks_math["exact_match,none"]' $ACC_DIR/*/*.json)
+        CURRENT_ACC=$(jq '.results.gsm8k["exact_match,flexible-extract"]' $ACC_DIR/*/*.json)
         echo "Curr accuracy: $CURRENT_ACC"
         echo "Best accuracy: $BEST_ACC"
 
