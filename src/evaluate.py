@@ -33,8 +33,11 @@ def vllm_generation(
             for i, single_outputs in enumerate(batch_outputs):
                 prompt = single_outputs.prompt
                 text_output = [prompt + output.text for output in single_outputs.outputs][0]
-                boxed_text = text_output.split("\\boxed{")[-1].split("}")[0]
-                if boxed_text == labels[i]:
+                if dataset_name == "GSM8K":
+                    answer = text_output.split("#### ")[-1]
+                elif dataset_name == "MATH":
+                    answer = text_output.split("\\boxed{")[-1].split("}")[0]
+                if answer == labels[i]:
                     correct_count += 1
 
             batch_index += generation_batch_size

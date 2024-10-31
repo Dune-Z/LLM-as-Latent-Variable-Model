@@ -1,4 +1,5 @@
 import os
+import re
 import json
 import time
 import torch
@@ -14,7 +15,7 @@ from datasets import Dataset, load_dataset
 from typing import List, Dict, Tuple, Optional
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from transformers import AutoTokenizer, AutoModelForCausalLM, DataCollatorForSeq2Seq
-GSM8K_FEWSHOT_PROMPT = r"""The following examples demonstrate how to solve various math problems step by step. For each problem, the solution should begin by identifying the key elements and then proceed with a logical sequence of steps to find the answer. The final answer should be clearly highlighted using $\\boxed{}$.
+MATH_FEWSHOT_PROMPT = r"""The following examples demonstrate how to solve various math problems step by step. For each problem, the solution should begin by identifying the key elements and then proceed with a logical sequence of steps to find the answer. The final answer should be clearly highlighted using $\\boxed{}$.
 Question: A positive multiple of 45 less than 1000 is randomly selected. What is the probability that it is a two-digit integer? Express your answer as a common fraction.
 
 Solution: The positive multiples of 45 are  \\[45,90,135,\\ldots,990=1\\cdot45,2\\cdot45,3\\cdot45,\\ldots,22\\cdot45.\\] There are 22 multiples on this list. Every positive multiple of 45 less than 1000 is either a two-digit integer or a three-digit integer. Out of the $99-10+1=90$ two-digit integers, $45$ and $90$ are multiples of 45. Therefore, the probability that the selected multiple of 45 has two digits is $2/22=\\boxed{\\frac{1}{11}}$.
@@ -25,14 +26,14 @@ Solution: We could check to see which divisors of $-35$ are roots of the cubic $
 
 """
 
-MATH_FEWSHOT_PROMPT = r"""The following examples demonstrate how to solve various math problems step by step. For each problem, the solution should begin by identifying the key elements and then proceed with a logical sequence of steps to find the answer. The final answer should be clearly highlighted using $\\boxed{}$.
+GSM8K_FEWSHOT_PROMPT = r"""The following examples demonstrate how to solve various math problems step by step. For each problem, the solution should begin by identifying the key elements and then proceed with a logical sequence of steps to find the answer. The final answer should be clearly highlighted after '#### ' in the solution.
 Question: A robe takes 2 bolts of blue fiber and half that much white fiber. How many bolts in total does it take?
 
-Solution: How many bolts of white fiber does it take? ** It takes 2/2=<<2/2=1>>1 bolt of white fiber How many bolts in total does it take? ** So the total amount of fabric is 2+1=<<2+1=3>>3 bolts of fabric. So the answer is $\\boxed{3}$.
+Solution: How many bolts of white fiber does it take? ** It takes 2/2=<<2/2=1>>1 bolt of white fiber How many bolts in total does it take? ** So the total amount of fabric is 2+1=<<2+1=3>>3 bolts of fabric. #### 3
 
 Question: Josh decides to try flipping a house. He buys a house for $80,000 and then puts in $50,000 in repairs. This increased the value of the house by 150%. How much profit did he make?
 
-Solution: The cost of the house and repairs came out to 80,000+50,000=$<<80000+50000=130000>>130,000 He increased the value of the house by 80,000*1.5=<<80000*1.5=120000>>120,000 So the new value of the house is 120,000+80,000=$<<120000+80000=200000>>200,000 So he made a profit of 200,000-130,000=$<<200000-130000=70000>>70,000. So the answer is $\\boxed{70,000}$.
+Solution: The cost of the house and repairs came out to 80,000+50,000=$<<80000+50000=130000>>130,000 He increased the value of the house by 80,000*1.5=<<80000*1.5=120000>>120,000 So the new value of the house is 120,000+80,000=$<<120000+80000=200000>>200,000 So he made a profit of 200,000-130,000=$<<200000-130000=70000>>70,000. #### 70,000
 
 """
 
@@ -214,7 +215,8 @@ def static_verification(
 ):
     results = list()
     for text_output in text_outputs:
-        boxed_text = text_output.split("\\boxed{")[-1].split("}")[0]
+        # boxed_text = text_output.split("\\boxed{")[-1].split("}")[0]
+        boxed_text = text_output.split("#### ")[-1]
         results.append(boxed_text == label)
 
     return results

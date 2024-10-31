@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+export MASTER_PORT=12355
 
 OUTPUT_DIR="outputs/gemma-2-2b-it-restem"
 ROUND=1
@@ -21,7 +22,7 @@ do
             output_file="$SAMPLE_FILE"\
             model_name_or_path=$CURRENT_SAMPLE_MODEL_PATH\
             sample_batch_size=128\
-            dataset_kwargs.MATH.problem_size=256
+            dataset_kwargs.GSM8K.problem_size=256
     else
         echo "Sample file already exists for round $i. Skip sampling."
     fi
@@ -32,19 +33,24 @@ do
     TEMP_MODEL_PATH=$CURRENT_MODEL_PATH
 
     while true; do
-        echo "Evaluating model for round $i"
-        ACC_FILE="${ROUND_DIR}/accuracy-${INNER_ROUND}.txt"
+        echo "Evaluating model for round $i, inner round $INNER_ROUND"
+        ACC_DIR="${ROUND_DIR}/accuracy-${INNER_ROUND}"
         # CUDA_VISIBLE_DEVICES=$CUDA_DEVICE python src/evaluate.py\
         #     model_name_or_path=$CURRENT_MODEL_PATH\
         #     output_file="$ACC_FILE"
-        CUDA_VISIBLE_DEVICES=$CUDA_DEVICE lm_eval \
-            --model vllm \
-            --model_args pretrained=$CURRENT_MODEL_PATH \
-            --task hendrycks_math \
-            --batch_size auto \
-            --output_path $OUTPUT_DIR
-
-        CURRENT_ACC=$(jq '.groups.hendrycks_math["exact_match,none"]' $ACC_FILE)
+        # if the file $ACC_DIR/*/*.json exists, then skip the evaluation
+        if [ ! -f $ACC_DIR/*/*.json ]; then
+            CUDA_VISIBLE_DEVICES=$CUDA_DEVICE lm_eval \
+                --model vllm \
+                --model_args pretrained=$CURRENT_MODEL_PATH \
+                --task gsm8k \
+                --batch_size auto \
+                --output_path $ACC_DIR \
+                --log_samples
+        else
+            echo "Accuracy file already exists for round $i. Skip evaluation."
+        fi
+        CURRENT_ACC=$(jq '.groups.hendrycks_math["exact_match,none"]' $ACC_DIR/*/*.json)
         echo "Curr accuracy: $CURRENT_ACC"
         echo "Best accuracy: $BEST_ACC"
 
@@ -54,6 +60,7 @@ do
 
             TOKENIZERS_PARALLELISM=false CUDA_VISIBLE_DEVICES=$CUDA_DEVICE python src/train.py\
                 model_name_or_path=$CURRENT_MODEL_PATH\
+                attention_impl=eager\
                 dataset_path="$SAMPLE_FILE"\
                 trainer.output_dir="$ROUND_DIR"\
                 trainer.deepspeed="configs/gemma-2b-it-deepspeed_config.json"

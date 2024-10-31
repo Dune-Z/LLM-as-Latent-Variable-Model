@@ -9,7 +9,7 @@ from utils import model_provider, filtered_math_dataset_provider
 
 
 class RestEMTrainer(Trainer):
-    def compute_loss(self, model, input, return_outputs=False):
+    def compute_loss(self, model, input, return_outputs=False, num_items_in_batch=None):
         labels = input.pop("labels")
         outputs = model(**input)
         logits = outputs.logits[..., -labels.shape[-1]:, :]
