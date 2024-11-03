@@ -12,10 +12,11 @@ trainer:
   lr_scheduler_type: "cosine"
   warmup_ratio: 0.1
   logging_strategy: "steps"
+  logging_steps: 1
   save_strategy: "epoch"
   fp16: false
   bf16: true
   run_name: "llama-3-8b-instruct"
   group_by_length: true
-  report_to: "none"
+  report_to: "wandb"
   deepspeed: "configs/deepspeed_config.json"
