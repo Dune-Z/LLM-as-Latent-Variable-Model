@@ -11,8 +11,10 @@ import torch.utils
 import transformers
 import multiprocessing
 from random import shuffle
+from dataclasses import dataclass
 from datasets import Dataset, load_dataset
-from typing import List, Dict, Tuple, Optional
+from torch.nn.utils.rnn import pad_sequence
+from typing import List, Dict, Tuple, Optional, Sequence
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from transformers import AutoTokenizer, AutoModelForCausalLM, DataCollatorForSeq2Seq
 MATH_FEWSHOT_PROMPT = r"""The following examples demonstrate how to solve various math problems step by step. For each problem, the solution should begin by identifying the key elements and then proceed with a logical sequence of steps to find the answer. The final answer should be clearly highlighted using $\\boxed{}$.
@@ -45,6 +47,8 @@ FEWSHOT_PROMPTS = {
 GENERATION_PROMPT = """Question: {question}
 
 Solution: """
+PAD_TOKEN_IDS = -100
+EOT_TOKEN = "<EOT>"
 
 
 def load_client():
@@ -98,6 +102,23 @@ class GSM8KDataset(torch.utils.data.Dataset):
         self.datasets.shuffle()
         sampled_items = [self[i] for i in range(size)]
         return sampled_items
+
+        
+@dataclass
+class DataCollatorForSFT:
+    tokenizer: transformers.PreTrainedTokenizer
+
+    def __call__(self, instances: Sequence[Dict]) -> Dict[str, torch.Tensor]:
+        input_ids, labels = tuple([instance[k] for instance in instances] for k in ["input_ids", "labels"])
+        input_ids = [torch.tensor(x) for x in input_ids]
+        input_ids = pad_sequence(input_ids, batch_first=True, padding_value=self.tokenizer.pad_token_id)
+        labels = [torch.tensor(x) for x in labels]
+        labels = pad_sequence(labels, batch_first=True, padding_value=PAD_TOKEN_IDS)
+        return dict(
+            input_ids=input_ids,
+            labels=labels,
+            attention_mask=input_ids.ne(self.tokenizer.pad_token_id),
+        )
 
 
 def index_processed_math_dataset(
@@ -172,15 +193,26 @@ def filtered_dataset_provider(filename: str, tokenizer: transformers.PreTrainedT
         qa_pairs = list()
         labels = list()
         for q, answer in zip(inputs, answers):
+            answer = [re.split(r'(####)', a, maxsplit=1)[0] + '####' + re.split(r'(####)', a, maxsplit=1)[2].split('####')[0] if '####' in a else a for a in answer]
             qa_pair = [f"Question: {q}\nSolution: {a}" for a in answer]
             qa_pairs.extend(qa_pair)
             labels.extend([a for a in answer])
         model_inputs = tokenizer(qa_pairs)
-        model_inputs["labels"] = tokenizer(labels)['input_ids']
+        with tokenizer.as_target_tokenizer():
+            labels_ids = tokenizer(labels)['input_ids']
+        # left pad labels to the same length as the model inputs using PAD_TOKEN_IDS
+        for i in range(len(labels_ids)):
+            labels_ids[i] = [PAD_TOKEN_IDS] * (len(model_inputs['input_ids'][i]) - len(labels_ids[i])) + labels_ids[i]
+        model_inputs["labels"] = labels_ids
         return model_inputs
     
     tokenized_dataset = dataset.map(_train_data_preprocess_fn, batched=True, remove_columns=dataset['train'].column_names)
-    data_collator = DataCollatorForSeq2Seq(tokenizer, padding=True)
+    if tokenizer.pad_token_id is None:
+        tokenizer.pad_token = tokenizer.eos_token
+        tokenizer.pad_token_id = tokenizer.eos_token_id
+
+    # data_collator = DataCollatorForSeq2Seq(tokenizer, padding=True)
+    data_collator = DataCollatorForSFT(tokenizer)
     # test_data = math_dataset_provider(splits=["test"], tokenizer=tokenizer)['test']
     # inputs = [d[1] for d in test_data][:10]
     # labels = [d[2] for d in test_data][:10]
@@ -206,7 +238,7 @@ def model_provider(cfg) -> Tuple[transformers.PreTrainedTokenizer, transformers.
         _attn_implementation=cfg.attention_impl,
         torch_dtype=torch.bfloat16 if cfg.trainer.bf16 else torch.float32,
     )
-    tokenizer.padding_side = "left"
+    tokenizer.padding_side = "right"
     return tokenizer, model
 
     

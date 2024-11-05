@@ -7,7 +7,7 @@ ROUND=1
 NUM_ROUNDS=5
 BASE_MODEL_PATH="TinyLlama/TinyLlama_v1.1_math_code"
 CURRENT_SAMPLE_MODEL_PATH="TinyLlama/TinyLlama_v1.1_math_code"
-CUDA_DEVICE=1
+CUDA_DEVICE=3
 
 for ((i=1; i<=$NUM_ROUNDS; i++))
 do
