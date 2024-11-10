@@ -211,7 +211,6 @@ def filtered_dataset_provider(filename: str, tokenizer: transformers.PreTrainedT
         tokenizer.pad_token = tokenizer.eos_token
         tokenizer.pad_token_id = tokenizer.eos_token_id
 
-    # data_collator = DataCollatorForSeq2Seq(tokenizer, padding=True)
     data_collator = DataCollatorForSFT(tokenizer)
     # test_data = math_dataset_provider(splits=["test"], tokenizer=tokenizer)['test']
     # inputs = [d[1] for d in test_data][:10]

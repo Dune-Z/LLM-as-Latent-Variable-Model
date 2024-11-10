@@ -1,13 +1,13 @@
 #!/bin/bash
 set -e
-export MASTER_PORT=12355
+export MASTER_PORT=12358
 
-OUTPUT_DIR="outputs/gemma-2-2b-it-restem"
+OUTPUT_DIR="outputs/gemma-2b-it-restem"
 ROUND=1
 NUM_ROUNDS=5
-BASE_MODEL_PATH="google/gemma-2-2b-it"
-CURRENT_SAMPLE_MODEL_PATH="google/gemma-2-2b-it"
-CUDA_DEVICE=3
+BASE_MODEL_PATH="google/gemma-2b-it"
+CURRENT_SAMPLE_MODEL_PATH="google/gemma-2b-it"
+CUDA_DEVICE=4
 
 for ((i=1; i<=$NUM_ROUNDS; i++))
 do

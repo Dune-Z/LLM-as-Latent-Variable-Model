@@ -2,6 +2,7 @@ import torch
 import hydra
 import transformers
 from tqdm import tqdm
+from trl import SFTTrainer
 from datasets import Dataset
 from omegaconf import DictConfig
 from transformers import Trainer, TrainingArguments
@@ -14,12 +15,13 @@ def main(cfg: DictConfig):
     model.config._attn_implementation = cfg.attention_impl
     dataset, data_collator = filtered_dataset_provider(cfg.dataset_path, tokenizer)
     training_args = TrainingArguments(**cfg.trainer)
-    trainer = Trainer(
+    trainer = SFTTrainer(
         model=model,
         tokenizer=tokenizer,
         train_dataset=dataset["train"],
         data_collator=data_collator,
         args=training_args,
+        packing=True
     )
     trainer.train()
 
