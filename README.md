@@ -19,3 +19,5 @@ Then call evaluation by the following command:
 ```bash
 CUDA_VISIBLE_DEVICES=3 lm_eval --model vllm --model_args pretrained=outputs/[SCRIPT_NAME]/round-[NUMBER]/checkpoint-[STEPS] --task gsm8k --batch_size auto --output_path outputs/[SCRIPT_NAME]/round-[NUMBER]/checkpoint-[STEPS] -accuracy --log_samples
 ```
+
+Change `vllm` to `hf` for Gemma model. 
