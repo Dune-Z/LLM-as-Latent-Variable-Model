@@ -7,7 +7,7 @@ ROUND=1
 NUM_ROUNDS=5
 BASE_MODEL_PATH="google/gemma-2-2b-it"
 CURRENT_SAMPLE_MODEL_PATH="google/gemma-2-2b-it"
-CUDA_DEVICE=2
+CUDA_DEVICE=0
 
 for ((i=1; i<=$NUM_ROUNDS; i++))
 do
@@ -63,6 +63,7 @@ do
                 attention_impl=eager\
                 dataset_path="$SAMPLE_FILE"\
                 trainer.output_dir="$ROUND_DIR"\
+                #round_dir="$ROUND_DIR"\
                 trainer.deepspeed="configs/gemma-2b-it-deepspeed_config.json"
 
             TEMP_MODEL_PATH=$CURRENT_MODEL_PATH

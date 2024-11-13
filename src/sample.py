@@ -14,6 +14,7 @@ from utils import (
     verification,
     batch_verification
 )
+import random
 
 
 def vllm_sample(
@@ -55,7 +56,8 @@ def vllm_sample(
                         verified_outputs[i] = output[:index-1]
 
                 if len(verified_outputs) > 0:
-                    verified_outputs = verified_outputs[:min(cutoff, len(verified_outputs))]
+                    #verified_outputs = verified_outputs[:min(cutoff, len(verified_outputs))]
+                    verified_outputs = [random.choice(verified_outputs[:min(cutoff, len(verified_outputs))])]
                     collections[single_outputs.prompt[len(FEWSHOT_PROMPTS[key]):]] = verified_outputs
 
             batch_index += sample_batch_size

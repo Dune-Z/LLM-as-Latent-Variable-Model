@@ -16,6 +16,7 @@ def main(cfg: DictConfig):
     dataset, data_collator = filtered_dataset_provider(cfg.dataset_path, tokenizer)
     training_args = TrainingArguments(**cfg.trainer)
     trainer = SFTTrainer(
+        #output_dir=cfg.round_dir, #modified
         model=model,
         tokenizer=tokenizer,
         train_dataset=dataset["train"],

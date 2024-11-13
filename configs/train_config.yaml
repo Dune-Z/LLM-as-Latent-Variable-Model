@@ -1,8 +1,11 @@
-model_name_or_path: "unsloth/llama-3-8b-instruct"
+#model_name_or_path: "unsloth/llama-3-8b-instruct"
+model_name_or_path: "google/gemma-2-2b-it"
 dataset_path: "outputs/sample_output.jsonl"
-attention_impl: "flash_attention_2"
+#attention_impl: "flash_attention_2"
+attention_impl: "eager"
 trainer:
-  output_dir: "outputs/llama-3-8b-instruct-restem"
+  #output_dir: "outputs/llama-3-8b-instruct-restem"
+  output_dir: "outputs/gemma-2-2b-it-restem"
   do_train: true
   eval_strategy: "no"
   per_device_train_batch_size: 6
@@ -16,7 +19,8 @@ trainer:
   save_strategy: "epoch"
   fp16: false
   bf16: true
-  run_name: "llama-3-8b-instruct"
+  #run_name: "llama-3-8b-instruct"
+  run_name: "gemma-2-2b-instruct-restem"
   group_by_length: true
   report_to: "wandb"
-  deepspeed: "configs/deepspeed_config.json"
+  deepspeed: "configs/gemma-2b-it-deepspeed_config.json"
