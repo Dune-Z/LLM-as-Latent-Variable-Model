@@ -1,12 +1,12 @@
 #!/bin/bash
 set -e
+export MASTER_PORT=12355
 
-OUTPUT_DIR="outputs/llama-3-8b-it-restem"
+OUTPUT_DIR="outputs/llama-3_1-8b-restem"
 ROUND=1
 NUM_ROUNDS=5
-BASE_MODEL_PATH="unsloth/llama-3-8b-instruct"
-CURRENT_SAMPLE_MODEL_PATH="unsloth/llama-3-8b-instruct"
-CUDA_DEVICE=0
+BASE_MODEL_PATH="meta-llama/Llama-3.1-8B-Instruct"
+CURRENT_SAMPLE_MODEL_PATH="meta-llama/Llama-3.1-8B-Instruct"
 
 for ((i=1; i<=$NUM_ROUNDS; i++))
 do
@@ -17,11 +17,11 @@ do
 
     if [ ! -f "$SAMPLE_FILE" ]; then
         echo "Sampling data for round $i"
-        CUDA_VISIBLE_DEVICES=$CUDA_DEVICE python src/sample.py\
+        python src/sample.py\
             output_file="$SAMPLE_FILE"\
             model_name_or_path=$CURRENT_SAMPLE_MODEL_PATH\
-            sample_batch_size=32\
-            dataset_kwargs.MATH.problem_size=-1
+            sample_batch_size=128\
+            dataset_kwargs.GSM8K.problem_size=-1
     else
         echo "Sample file already exists for round $i. Skip sampling."
     fi
@@ -32,13 +32,20 @@ do
     TEMP_MODEL_PATH=$CURRENT_MODEL_PATH
 
     while true; do
-        echo "Evaluating model for round $i"
-        ACC_FILE="${ROUND_DIR}/accuracy-${INNER_ROUND}.txt"
-        CUDA_VISIBLE_DEVICES=$CUDA_DEVICE python src/evaluate.py\
-            model_name_or_path=$CURRENT_MODEL_PATH\
-            output_file="$ACC_FILE"
-
-        CURRENT_ACC=$(cat $ACC_FILE)
+        echo "Evaluating model for round $i, inner round $INNER_ROUND"
+        ACC_DIR="${ROUND_DIR}/accuracy-${INNER_ROUND}"
+        if [ ! -f $ACC_DIR/*/*.json ]; then
+            lm_eval \
+                --model hf \
+                --model_args pretrained=$CURRENT_MODEL_PATH \
+                --task gsm8k \
+                --batch_size auto \
+                --output_path $ACC_DIR \
+                --log_samples
+        else
+            echo "Accuracy file already exists for round $i. Skip evaluation."
+        fi
+        CURRENT_ACC=$(jq '.results.gsm8k["exact_match,flexible-extract"]' $ACC_DIR/*/*.json)
         echo "Curr accuracy: $CURRENT_ACC"
         echo "Best accuracy: $BEST_ACC"
 
@@ -46,11 +53,11 @@ do
             echo "Accuracy improved from $BEST_ACC to $CURRENT_ACC. Train new model."
             BEST_ACC=$CURRENT_ACC
 
-            TOKENIZERS_PARALLELISM=false CUDA_VISIBLE_DEVICES=$CUDA_DEVICE python src/train.py\
+            TOKENIZERS_PARALLELISM=false python src/train.py\
                 model_name_or_path=$CURRENT_MODEL_PATH\
                 dataset_path="$SAMPLE_FILE"\
                 trainer.output_dir="$ROUND_DIR"\
-                trainer.deepspeed="configs/llama-3-8b-it-deepspeed_config.json"
+                trainer.deepspeed="configs/gemma-2b-it-deepspeed_config.json"
 
             TEMP_MODEL_PATH=$CURRENT_MODEL_PATH
             mv $ROUND_DIR/checkpoint-* "${ROUND_DIR}/checkpoint-inner-round-${INNER_ROUND}"

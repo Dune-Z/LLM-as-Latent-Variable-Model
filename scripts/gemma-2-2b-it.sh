@@ -35,10 +35,6 @@ do
     while true; do
         echo "Evaluating model for round $i, inner round $INNER_ROUND"
         ACC_DIR="${ROUND_DIR}/accuracy-${INNER_ROUND}"
-        # CUDA_VISIBLE_DEVICES=$CUDA_DEVICE python src/evaluate.py\
-        #     model_name_or_path=$CURRENT_MODEL_PATH\
-        #     output_file="$ACC_FILE"
-        # if the file $ACC_DIR/*/*.json exists, then skip the evaluation
         if [ ! -f $ACC_DIR/*/*.json ]; then
             CUDA_VISIBLE_DEVICES=$CUDA_DEVICE lm_eval \
                 --model hf \
@@ -65,6 +61,7 @@ do
                 trainer.output_dir="$ROUND_DIR"\
                 trainer.deepspeed="configs/gemma-2b-it-deepspeed_config.json"
 
+            exit 0
             TEMP_MODEL_PATH=$CURRENT_MODEL_PATH
             mv $ROUND_DIR/checkpoint-* "${ROUND_DIR}/checkpoint-inner-round-${INNER_ROUND}"
             CURRENT_MODEL_PATH="${ROUND_DIR}/checkpoint-inner-round-${INNER_ROUND}"

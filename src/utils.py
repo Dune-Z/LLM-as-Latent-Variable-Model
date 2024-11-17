@@ -184,7 +184,7 @@ def gsm8k_dataset_provider(
     return datasets
 
     
-def filtered_dataset_provider(filename: str, tokenizer: transformers.PreTrainedTokenizer):
+def filtered_dataset_provider(filename: str, tokenizer: transformers.PreTrainedTokenizer, condition_prob: bool = False):
     dataset = load_dataset('json', data_files=filename)
 
     def _train_data_preprocess_fn(example):
@@ -199,10 +199,13 @@ def filtered_dataset_provider(filename: str, tokenizer: transformers.PreTrainedT
             labels.extend([a for a in answer])
         model_inputs = tokenizer(qa_pairs)
         with tokenizer.as_target_tokenizer():
-            labels_ids = tokenizer(labels)['input_ids']
-        # left pad labels to the same length as the model inputs using PAD_TOKEN_IDS
-        for i in range(len(labels_ids)):
-            labels_ids[i] = [PAD_TOKEN_IDS] * (len(model_inputs['input_ids'][i]) - len(labels_ids[i])) + labels_ids[i]
+            if condition_prob:
+                labels_ids = tokenizer(labels)['input_ids']
+                for i in range(len(labels_ids)):
+                    labels_ids[i] = [PAD_TOKEN_IDS] * (len(model_inputs['input_ids'][i]) - len(labels_ids[i])) + labels_ids[i]
+            else:
+                labels_ids = tokenizer(qa_pairs)['input_ids']
+
         model_inputs["labels"] = labels_ids
         return model_inputs
     
