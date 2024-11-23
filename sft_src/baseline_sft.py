@@ -9,7 +9,6 @@ from datasets import load_dataset
 from dataclasses import dataclass, field
 from torch.nn.utils.rnn import pad_sequence
 from transformers import HfArgumentParser, TrainingArguments, AutoTokenizer, AutoModelForCausalLM
-os.environ["HF_TOKEN"] = "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"
 
 
 @dataclass
