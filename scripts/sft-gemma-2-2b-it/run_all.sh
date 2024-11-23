@@ -21,7 +21,10 @@ accelerate launch --num_processes 8 --main_process_port 29501 sft_src/baseline_s
     --push_to_hub False\
     --attn_implementation eager\
     --train_set_path "${OUTPUT_PATH}/sample_output.jsonl"\
-    --num_train_epochs 10
+    --num_train_epochs 10\
+    --per_device_train_batch_size 16\
+    --per_device_eval_batch_size 16\
+    --gradient_accumulation_steps 1
 
 # for each checkpoint, evaluate the model
 for checkpoint in $(ls $OUTPUT_PATH/checkpoint* | sort -V); do
