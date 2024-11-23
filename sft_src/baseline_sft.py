@@ -100,13 +100,19 @@ class DataCollatorForSFT:
 def filtered_dataset_provider(filename, tokenizer):
     dataset = load_dataset('json', data_files=filename)
 
+    def _extract_answers(response):
+        answer = re.search(r"The answer is: (.*)", response)
+        if answer: return answer.group(1)
+        elif answer := re.search(r"#### (\-?[0-9\.,]+)", response): return answer.group(1)
+        else: return re.split(r'(####)', response, maxsplit=1)[0] + '####' + re.split(r'(####)', response, maxsplit=1)[2].split('####')[0] if '####' in response else response
+
     def _train_data_preprocess_fn(example):
         inputs = example['Question']
         answers = example['Answers']
         qa_pairs = list()
         labels = list()
         for q, answer in zip(inputs, answers):
-            answer = [re.split(r'(####)', a, maxsplit=1)[0] + '####' + re.split(r'(####)', a, maxsplit=1)[2].split('####')[0] if '####' in a else a for a in answer]
+            answer = [_extract_answers(a) for a in answer]
             qa_pair = [f"Question: {q}\nSolution: {a}" for a in answer]
             qa_pairs.extend(qa_pair)
             labels.extend([a for a in answer])

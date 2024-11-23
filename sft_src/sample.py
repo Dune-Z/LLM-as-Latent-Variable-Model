@@ -7,7 +7,6 @@ from typing import Any, Dict, List
 from torch.utils.data import Dataset
 from vllm import LLM, SamplingParams
 from utils import (
-    CLIENT,
     DATASET_PROVIDERS,
     FEWSHOT_PROMPTS,
     static_verification,
@@ -38,8 +37,7 @@ def vllm_sample(
             batch_outputs = llm.generate(prompts, sample_params)
 
             for i, single_outputs in enumerate(batch_outputs):
-                prompt = single_outputs.prompt
-                text_outputs = [prompt + output.text for output in single_outputs.outputs]
+                text_outputs = [output.text for output in single_outputs.outputs]
                 reward = static_verification(text_outputs, labels[i])
                 verified_outputs = [output.text for output, r in zip(single_outputs.outputs, reward) if r]
                 stop_string = "I hope it is correct."

@@ -19,35 +19,23 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from transformers import AutoTokenizer, AutoModelForCausalLM
 MATH_FEWSHOT_PROMPT = r"""The following examples demonstrate how to solve various math problems step by step. For each problem, the solution should begin by identifying the key elements and then proceed with a logical sequence of steps to find the answer. The final answer should be clearly highlighted using $\\boxed{}$.
 Question: A positive multiple of 45 less than 1000 is randomly selected. What is the probability that it is a two-digit integer? Express your answer as a common fraction.
-
 Solution: The positive multiples of 45 are  \\[45,90,135,\\ldots,990=1\\cdot45,2\\cdot45,3\\cdot45,\\ldots,22\\cdot45.\\] There are 22 multiples on this list. Every positive multiple of 45 less than 1000 is either a two-digit integer or a three-digit integer. Out of the $99-10+1=90$ two-digit integers, $45$ and $90$ are multiples of 45. Therefore, the probability that the selected multiple of 45 has two digits is $2/22=\\boxed{\\frac{1}{11}}$.
-
 Question: Factor $x^3 - 9x^2 + 27x - 35$.
-
 Solution: We could check to see which divisors of $-35$ are roots of the cubic $x^3 - 9x^2 + 27x - 35 = 0$.\n\nHowever, notice that $x^3 - 9x^2 + 27x - 35 = (x - 3)^3 - 2^3$. As such, we can factor this as a difference of cubes: $(x-3)^3 - 2^3 = ((x-3)-2)((x-3)^2+2(x-3)+2^2) = (x-5)(x^2-4x+7)$.\n\nWe see that $x^2-4x+7$ cannot be factored any further, so our answer is $\\boxed{(x-5)(x^2-4x+7)}$.
-
 """
 
 GSM8K_FEWSHOT_PROMPT = r"""The following examples demonstrate how to solve various math problems step by step. For each problem, the solution should begin by identifying the key elements and then proceed with a logical sequence of steps to find the answer. The final answer should be clearly highlighted after '#### ' in the solution.
 Question: A robe takes 2 bolts of blue fiber and half that much white fiber. How many bolts in total does it take?
-
 Solution: How many bolts of white fiber does it take? ** It takes 2/2=<<2/2=1>>1 bolt of white fiber How many bolts in total does it take? ** So the total amount of fabric is 2+1=<<2+1=3>>3 bolts of fabric. #### 3
-
 Question: Josh decides to try flipping a house. He buys a house for $80,000 and then puts in $50,000 in repairs. This increased the value of the house by 150%. How much profit did he make?
-
 Solution: The cost of the house and repairs came out to 80,000+50,000=$<<80000+50000=130000>>130,000 He increased the value of the house by 80,000*1.5=<<80000*1.5=120000>>120,000 So the new value of the house is 120,000+80,000=$<<120000+80000=200000>>200,000 So he made a profit of 200,000-130,000=$<<200000-130000=70000>>70,000. #### 70,000
-
 """
 
 METAMATH_FEWSHOT_PROMPT = r"""The following examples demonstrate how to solve various math problems step by step. For each problem, the solution should begin by identifying the key elements and then proceed with a logical sequence of steps to find the answer. The final answer should be clearly highlighted after 'The answer is: ' in the solution.
 Question: A robe takes 2 bolts of blue fiber and half that much white fiber. How many bolts in total does it take?
-
 Solution: How many bolts of white fiber does it take? ** It takes 2/2=<<2/2=1>>1 bolt of white fiber How many bolts in total does it take? ** So the total amount of fabric is 2+1=<<2+1=3>>3 bolts of fabric. #### 3 The answer is: 3.
-
 Question: Josh decides to try flipping a house. He buys a house for $80,000 and then puts in $50,000 in repairs. This increased the value of the house by 150%. How much profit did he make?
-
 Solution: The cost of the house and repairs came out to 80,000+50,000=$<<80000+50000=130000>>130,000 He increased the value of the house by 80,000*1.5=<<80000*1.5=120000>>120,000 So the new value of the house is 120,000+80,000=$<<120000+80000=200000>>200,000 So he made a profit of 200,000-130,000=$<<200000-130000=70000>>70,000. #### 70,000 The answer is: 70,000.
-
 """
 
 FEWSHOT_PROMPTS = {
@@ -57,7 +45,6 @@ FEWSHOT_PROMPTS = {
 }
 
 GENERATION_PROMPT = """Question: {question}
-
 Solution: """
 PAD_TOKEN_IDS = -100
 EOT_TOKEN = "<EOT>"
@@ -189,19 +176,14 @@ def math_dataset_provider(
         split_path = os.path.join(path, split)
         fields = [f for f in pathlib.Path(split_path).iterdir() if f.is_dir()]
 
-        # Iterate through each field and process the JSON files in parallel
         with ThreadPoolExecutor() as executor:
             for field in fields:
                 json_files = [file for file in pathlib.Path(field).iterdir() if file.suffix == ".json"]
-                
-                # Load all JSON files concurrently
                 json_data_list = list(executor.map(load_json_file, json_files))
                 
                 for data in json_data_list:
-                    # Find the corresponding solution using the index
                     if data["problem"] in processed_index[split]:
                         data["label"] = processed_index[split][data["problem"]]
-                        # remove "level", "type" keys from the dict
                         data.pop("level", None)
                         data.pop("type", None)
                         ds[split].append(data)
@@ -288,12 +270,17 @@ def static_verification(
     text_outputs: List[str],
     label: str,
 ):
-    regex_pattern = r"#### (\-?[0-9\.,]+)"
+    general_pattern = r"The answer is: (.*)"
+    gsm8k_pattern = r"#### (\-?[0-9\.,]+)"
     results = list()
     for text_output in text_outputs:
-        # boxed_text = text_output.split("#### ")[-1]
-        boxed_text = re.search(regex_pattern, text_output).group(1)
-        results.append(boxed_text == label)
+        boxed_text = re.search(general_pattern, text_output)
+        if boxed_text := re.search(general_pattern, text_output):
+            results.append(boxed_text.group(1) == label)
+        elif boxed_text := re.search(gsm8k_pattern, text_output):
+            results.append(boxed_text.group(1) == label)
+        else:
+            results.append(False)
 
     return results
 
