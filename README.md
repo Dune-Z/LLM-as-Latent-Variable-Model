@@ -1,1 +1,1 @@
-# Temporal Collecitons of Code
+# Temporary Collecitons of Code
