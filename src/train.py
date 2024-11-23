@@ -6,6 +6,7 @@ from trl import SFTTrainer
 from datasets import Dataset
 from omegaconf import DictConfig
 from transformers import Trainer, TrainingArguments
+from transformers.models.gemma2.modeling_gemma2 import Gemma2ForCausalLM
 from utils import model_provider, filtered_dataset_provider
 
 
