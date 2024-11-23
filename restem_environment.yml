@@ -1,4 +1,4 @@
-name: sft
+name: restem
 channels:
   - defaults
 dependencies:
