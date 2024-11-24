@@ -9,6 +9,7 @@ import asyncio
 import pathlib
 import torch.utils
 import transformers
+import pandas as pd
 import multiprocessing
 from random import shuffle
 from dataclasses import dataclass
@@ -107,6 +108,9 @@ class MetaMathDataset(torch.utils.data.Dataset):
     def __init__(self, path: str, split: str, tokenizer: Optional[transformers.PreTrainedTokenizer] = None):
         self.datasets = load_dataset(path)[split]
         self.tokenizer = tokenizer
+        df = pd.DataFrame(self.datasets)
+        df.drop_duplicates(subset=["query"], inplace=True)
+        self.datasets = Dataset.from_pandas(df)
     
     def __len__(self):
         return len(self.datasets)

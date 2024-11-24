@@ -126,6 +126,11 @@ def main(cfg: DictConfig):
         train_dataset = dataset["train"]
         if dataset_configs.problem_size > 0 and dataset_configs.problem_size < len(train_dataset):
             train_dataset = train_dataset.sample(dataset_configs.problem_size)
+        if dataset_configs.num_partitions > 1:
+            size_per_partition = len(train_dataset) // dataset_configs.num_partitions
+            start_idx = dataset_configs.partition_id * size_per_partition
+            end_idx = len(train_dataset) if dataset_configs.partition_id == dataset_configs.num_partitions - 1 else (dataset_configs.partition_id + 1) * size_per_partition
+            train_dataset = train_dataset[start_idx:end_idx]
         print(f"DATASET: {dataset_name} | PROBLEM SIZE: {len(train_dataset)} | SAMPLE SIZE: {dataset_configs.sample_size} | BATCH SIZE: {cfg.sample_batch_size} | DP SIZE: {cfg.world_size}")
         print(f"PER WORKER SIZE: {len(train_dataset) // cfg.world_size}")
         datasets[dataset_name] = train_dataset

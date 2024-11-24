@@ -12,6 +12,8 @@ dataset_kwargs:
   METAMATH:
     problem_size: -1
     sample_size: 32
+    num_partitions: 1
+    partition_id: 0
 output_file: "outputs/sample_output.jsonl"
 verification_model: "gpt-4-turbo"
 world_size: 1
