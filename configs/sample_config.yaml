@@ -14,3 +14,4 @@ dataset_kwargs:
     sample_size: 32
 output_file: "outputs/sample_output.jsonl"
 verification_model: "gpt-4-turbo"
+world_size: 1

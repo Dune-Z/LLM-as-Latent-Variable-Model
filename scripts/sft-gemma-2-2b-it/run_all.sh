@@ -12,7 +12,9 @@ python sft_src/sample.py\
     output_file="$OUTPUT_PATH/sample_output.jsonl"\
     model_name_or_path=$MODEL_PATH\
     sample_batch_size=1024\
-    dataset_kwargs.METAMATH.problem_size=-1
+    dataset_kwargs.METAMATH.problem_size=-1\
+    dataset_kwargs.METAMATH.sample_size=8
+
 
 accelerate launch --num_processes 8 --main_process_port 29501 sft_src/baseline_sft.py \
     --deepspeed configs/sft_deepspeed.json\
