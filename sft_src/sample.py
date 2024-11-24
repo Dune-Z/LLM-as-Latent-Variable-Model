@@ -152,7 +152,6 @@ def main(cfg: DictConfig):
             with open(rank_output_file, "r") as f:
                 data = json.load(f)
                 combined_collections.update(data)
-            os.remove(rank_output_file)
         
         with open(cfg.output_file, "w") as f:
             json.dump(combined_collections, f, indent=4)
