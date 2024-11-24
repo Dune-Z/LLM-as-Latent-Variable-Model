@@ -112,6 +112,8 @@ class MetaMathDataset(torch.utils.data.Dataset):
         return len(self.datasets)
     
     def __getitem__(self, idx):
+        if isinstance(idx, slice):
+            return [self[i] for i in range(*idx.indices(len(self.datasets)))]
         item = self.datasets[idx]
         prompt = METAMATH_FEWSHOT_PROMPT + GENERATION_PROMPT.format(question=item["query"])
         inputs = self.tokenizer(prompt) if self.tokenizer is not None else None
