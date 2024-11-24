@@ -157,7 +157,7 @@ training_args = TrainingArguments(
     logging_steps=1,
     push_to_hub=script_args.push_to_hub,
     hub_model_id=script_args.hub_model_id,
-    report_to='wandb'
+    report_to='no'
 )
 
 model_kwargs = dict(
