@@ -149,7 +149,10 @@ def main(cfg: DictConfig):
 
         combined_collections = {}
         for rank in range(cfg.world_size):
-            rank_output_file = f"{cfg.output_file.split('.')[0]}_{rank}.{cfg.output_file.split('.')[1]}"
+            filename = cfg.output_file.split(".")[:-1]
+            filename = ".".join(filename)
+            filetype = cfg.output_file.split(".")[-1]
+            rank_output_file = f"{filename}_{rank}.{filetype}"
             with open(rank_output_file, "r") as f:
                 data = json.load(f)
                 combined_collections.update(data)
