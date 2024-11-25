@@ -61,8 +61,9 @@ def vllm_sample_ddp(
 
             batch_index += sample_batch_size
     
-    filename = output_file.split(".")[0]
-    filetype = output_file.split(".")[1]
+    filename = output_file.split(".")[:-1]
+    filename = ".".join(filename)
+    filetype = output_file.split(".")[-1]
     rank_output_file = f"{filename}_{rank}.{filetype}"
     with open(rank_output_file, "w") as f:
         json.dump(collections, f, indent=4)
