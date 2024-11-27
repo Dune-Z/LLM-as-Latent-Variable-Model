@@ -78,6 +78,10 @@ class ScriptArguments:
         default=None,#"flash_attention_2",
         metadata={"help": "Which attention implementation to use"},
     )
+    train_ratio: Optional[float] = field(
+        default=1.0,
+        metadata={"help": "The ratio of the training data to use"},
+    )
 
 
 @dataclass
@@ -174,6 +178,9 @@ def cot_prefix(sample):
 tokenizer = AutoTokenizer.from_pretrained(script_args.model_name)
 train_dataset, data_collator = filtered_dataset_provider(script_args.train_set_path, tokenizer)
 train_dataset = train_dataset["train"].shuffle(seed=42)
+if script_args.train_ratio < 1.0:
+    size = int(len(train_dataset) * script_args.train_ratio)
+    train_dataset = train_dataset.select(range(size))
 # column_names = list(train_dataset.features)
 # train_dataset = train_dataset.map(cot_prefix, remove_columns=column_names, num_proc=16)
 trainer = SFTTrainer(
